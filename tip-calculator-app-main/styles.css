@@ -1,0 +1,37 @@
+:root {
+    --Strong-cyan: hsl(172, 67%, 45%);
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan1: hsl(186, 14%, 43%);
+    --Dark-grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan1: hsl(185, 41%, 84%);
+    --Light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+    --Weights: 400, 500, 700;
+}
+.main-bg-color{
+    background-color: var(--Light-grayish-cyan1);
+}
+.title-text {
+    color: var(--Very-dark-cyan);
+    letter-spacing: 4px;
+}
+.other-text {
+    color: var(--Dark-grayish-cyan1);
+}
+.input-bg {
+    background-color: var(--Light-grayish-cyan);
+}
+
+
+.dark {
+    color: var(--Very-dark-cyan);
+}
+.dark-bg {
+    background-color: var(--Very-dark-cyan);
+}
+.st-cyan {
+    color: var(--Strong-cyan);
+}
+.st-cyan-bg {
+    background-color: var(--Strong-cyan);
+}

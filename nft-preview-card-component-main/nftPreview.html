@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+  <script type="tailwind-config">
+    {
+      theme: {
+        extend: {
+          colors: {
+            'very-dark-blue': 'hsl(217, 54%, 11%)',
+            'dark-blue': 'hsl(216, 50%, 16%)',
+            'line-blue': 'hsl(215, 32%, 27%)',
+            'cyan': 'hsl(178, 100%, 50%)',
+            'soft-blue': 'hsl(215, 51%, 70%)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body 
+  class="bg-very-dark-blue min-h-screen max-w-xs mx-auto my-auto grid place-items-center"
+  style="font-family: 'Outfit', sans-serif;">
+  <section class="rounded-2xl bg-dark-blue shadow-2xl">
+    <article class="p-6 relative">
+      <div class="rounded-xl relative overflow-hidden group">
+        <div class="group-hover:bg-cyan">
+          <img src="./images/image-equilibrium.jpg" alt="" class="rounded-xl group-hover:opacity-60  object-cover bg-blend-normal">
+        </div>
+
+        <div class=" h-full absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100">
+          <svg class="text-white" width="48" height="48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h48v48H0z"/><path d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z" fill="#FFF" fill-rule="nonzero"/></g></svg>
+        </div>
+        
+      </div>
+      <div class="mt-5" >
+        <a href="#" class="text-white text-xl hover:text-cyan">Equilibrium #3429</a>
+        
+        <p class="mt-3 text-soft-blue text-sm font-thin tracking-wide">Our Equilibrium collection promotes balance and calm.</p>
+        <div class="flex justify-between items-center mt-3">
+          <div class="flex items-center gap-2">
+            <img src="./images/icon-ethereum.svg" alt="">
+            <p class="text-cyan">0.041 ETH</p>
+          </div>
+          <div class="flex items-center gap-2 ">
+            <img src="./images/icon-clock.svg" alt="">
+            <p class="text-soft-blue">3 days left</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center border-t border-gray-600 mt-3 py-3">
+        <img src="./images/image-avatar.png" alt="" class="w-8 h-8 rounded-full border">
+        <p class="ml-3 text-soft-blue text-sm tracking-wide">Creation of <a href="#" class="text-white hover:text-cyan">Jules Wyvern</a></p>
+      </div>
+    </article>
+  </section>
+  
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/cssbubble">Priyanka</a>.</div>
+</body>
+</html>

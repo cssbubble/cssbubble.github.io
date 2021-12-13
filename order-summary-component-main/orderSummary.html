@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  
+</head>
+<body>
+  <div class="relative w-full h-full flex justify-center bg-indigo-50">
+    <!-- pattern background for mobile svg  -->
+    <svg xmlns="http://www.w3.org/2000/svg"  class="min-w-full lg:hidden absolute"><path fill="#D6E1FF" fill-rule="evenodd" d="M-131.808 155.366c97.026 51.512 204.233 51.512 321.62 0 117.388-51.512 223.27-51.512 317.648 0V0h-639.268v155.366z"/>
+    </svg>
+
+    <!-- pattern background for desktop  -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="437" class="max-w-full hidden absolute md:flex"><path fill="#D6E1FF" fill-rule="evenodd" d="M0 349.974c218.558 116.035 460.05 116.035 724.475 0s502.933-116.035 715.525 0V0H0v349.974z"/></svg>
+    
+    <div class="bg-gray-50 rounded-xl shadow-2xl mx-auto z-10 my-20 max-w-sm">
+      <div class="">
+        <img src="./images/illustration-hero.svg" alt="">
+        
+      </div>
+      <div class="text-center mt-8 max-w-xs mx-auto">
+        <h1 class="font-bold tracking-wide text-xl text-gray-900">Order Summary</h1>
+        <p class="text-gray-400 text-sm leading-6 mt-4">You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!</p>
+        <div class="bg-gray-100 mt-10 rounded-xl flex justify-between items-center">
+          <div class="flex justify-center items-center px-3 py-4">
+            <img src="./images/icon-music.svg" alt="">
+            <div class="px-4">
+              <h3 class="font-bold">Annual Plan</h3>
+              <p class="text-gray-400">$59.99/year</p>
+            </div>
+          </div>
+          <div class="px-3">
+            <a href="#" class="text-indigo-700 font-semibold underline text-sm hover:text-indigo-800">Change</a>
+          </div>
+        </div>  
+        <button class="font-semibold bg-indigo-700 hover:bg-indigo-800 rounded-xl py-3 w-full mt-6 text-sm text-indigo-100 shadow-xl">Proceed to Payment</button>
+        <button class="text-gray-600 text-sm my-6 font-semibold hover:underline">Cancel Order</button>
+      </div>
+    </div>
+  </div>
+
+  
+
+  
+
+  
+  
+  <div class="attribution text-center">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="underline">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/cssbubble" class="underline">Priyanka </a>.
+  </div>
+</body>
+</html>

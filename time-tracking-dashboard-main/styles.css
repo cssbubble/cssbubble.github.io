@@ -1,0 +1,60 @@
+:root {
+    
+--Blue: hsl(246, 80%, 60%);
+
+--Lighter-red: hsl(15, 100%, 70%);
+--Soft-blue: hsl(195, 74%, 62%);
+--Light-red: hsl(348, 100%, 68%);
+--Lime-green: hsl(145, 58%, 55%);
+--Violet: hsl(264, 64%, 52%);
+--Soft-orange: hsl(43, 84%, 65%);
+
+
+--Very-dark-blue: hsl(226, 43%, 10%);
+--Dark-blue: hsl(235, 46%, 20%);
+--Desaturated-blue: hsl(235, 56%, 34%);
+--Pale-Blue: hsl(236, 100%, 87%);
+
+--family: [Rubik](https://fonts.google.com/specimen/Rubik)
+--weights: 300, 400, 500
+
+}
+body {
+    background-color: var(--Very-dark-blue);
+    font-family: var(--family);
+}
+
+.base {
+    background-color: var(--Dark-blue);
+}
+
+.profile {
+    background-color: var(--Blue);
+} 
+
+.bgwork {
+    background-color: var(--Lighter-red);
+}
+
+.bgplay {
+    background-color: var(--Soft-blue);
+}
+
+.bgstudy {
+    background-color: var(--Light-red);
+}
+
+.bgexercise {
+    background-color: var(--Lime-green);
+}
+
+.bgsocial {
+    background-color: var(--Violet);
+}
+
+.bgselfcare {
+    background-color: var(--Soft-orange);
+}
+.base:hover {
+    background-color: var(--Desaturated-blue);
+}
