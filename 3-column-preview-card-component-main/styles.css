@@ -1,0 +1,46 @@
+
+
+
+.orange {
+    background-color: hsl(31, 77%, 52%);
+}
+.text-orange {
+    color: hsl(31, 77%, 52%);
+}
+.dr-cyan {
+    background-color: hsl(184, 100%, 22%);
+}
+.text-drcyan {
+    color: hsl(184, 100%, 22%);
+}
+
+.vdr-cyan {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.text-vdr-cyan {
+    color: hsl(179, 100%, 13%)
+}
+
+.para {
+    color:  hsla(0, 0%, 100%, 0.75);
+}
+
+.other {
+    color: hsl(0, 0%, 95%);
+}
+
+.bg-other {
+    background-color: hsl(0, 0%, 95%);
+}
+
+@font-face {
+    font-family: Big Shoulders Display;
+    src: url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+}
+
+/* @font-face {
+    font-family: Lexend Deca;
+    src: url(https://fonts.google.com/specimen/Lexend+Deca);
+} */
+
