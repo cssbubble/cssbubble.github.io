@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Profile card component</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    .attribution { font-size: 11px; text-align: center; padding-bottom: 10px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+  </style>
+</head>
+<body class="min-h-screen">
+  
+  <main class="grid place-items-center w-full md:max-w-4xl min-h-screen mx-auto"> 
+    <div class="w-80 rounded-2xl overflow-hidden bg-gray-100">
+      <div class="h-28" style="background-image: url('./images/bg-pattern-card.svg');"></div>
+      <div class="flex flex-col items-center -mt-12">
+        <img class="rounded-full ring-4 ring-gray-100" src="./images/image-victor.jpg" alt="">
+        <h1 class="text-xl font-bold mt-7 tracking-wide">Victor Crest <span class="text-gray-500 font-normal">26</span></h1>  
+        <p class="text-gray-500 mb-7 text-sm mt-3 ">London</p>
+      </div>
+      <hr class="text-gray-300">
+      <div class="flex justify-around items-center p-6">
+        <div class="text-center"><h2 class="font-bold text-lg">80K</h2><p class="text-xs text-gray-400 tracking-wide ">Followers</p></div>
+        <div class="text-center"><h2 class="font-bold text-lg">803K</h2><p class="text-xs text-gray-400 tracking-wide ">Likes</p></div>
+        <div class="text-center"><h2 class="font-bold text-lg">1.4K</h2><p class="text-xs text-gray-400 tracking-wide ">Photos</p></div>
+      </div>
+    </div>  
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/cssbubble">priyanka</a>.
+  </div>
+</body>
+</html>

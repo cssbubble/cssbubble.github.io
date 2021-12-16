@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: url('./images/bg-pattern-top.svg') left -700px top -400px fixed, 
+        url('./images/bg-pattern-bottom.svg') right -700px bottom -400px fixed;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-color: hsl(185, 75%, 39%);
+  }
+
+@media only screen and (min-width: 1440px){
+    body {
+        background: url('./images/bg-pattern-top.svg') left -200px top -600px fixed, 
+        url('./images/bg-pattern-bottom.svg') right -200px bottom -600px fixed;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-color: hsl(185, 75%, 39%);
+    }
+}  
