@@ -45,14 +45,14 @@
         <div class="flex justify-center items-center">
 
           <!-- mobile menu  -->
-          <button @click = "open = !open" class="md:hidden">
+          <button @click = "open = !open" class="md:hidden" aria-label="menu">
             <img src="./images/icon-menu.svg" alt="menu icon">
           </button>
           <div
           x-show = "open" 
           @click.outside = "open = false "
           class="absolute inset-y-0 left-0 w-2/3 z-10 bg-white pl-5 pt-5 bg-white">
-            <button @click = "open = !open">
+            <button @click = "open = !open" aria-label="close icon">
               <img src="./images/icon-close.svg" alt="">
             </button>  
             <div class="-ml-5 pl-5 h-screen flex flex-col items-start font-bold mt-5 bg-white">
@@ -66,7 +66,7 @@
 
           <!-- desktop menu  -->
           <button>
-            <img class="ml-4" src="./images/logo.svg" alt="">
+            <img class="ml-4" src="./images/logo.svg" alt="" aria-label="logo">
           </button>
           <div class="hidden md:flex md:justify-center md:items-center md:ml-10 gap-6 text-darkGrayishBlue">
             <a class="hover:border-b-8 hover:border-customOrange h-24 flex flex-col items-center justify-center" href="#">Collections</a>
@@ -82,7 +82,7 @@
           <!-- cart button  -->
           <button 
             @click = "open = !open"
-            class="">
+            class="" aria-label="cart icon">
             <img src="./images/icon-cart.svg" alt="">
             
             <!-- empty cart  -->
@@ -141,7 +141,7 @@
           
           <!-- avatar  -->
           <div class="ml-4 md:ml-12">
-            <button class="rounded-full hover:ring-2 hover:ring-customOrange">
+            <button class="rounded-full hover:ring-2 hover:ring-customOrange" aria-label="avatar">
               <img class=" w-6 h-6 md:w-12 md:h-12" src="./images/image-avatar.png" alt="">
             </button>
           </div>  
@@ -189,10 +189,12 @@
         <!-- arrow icons for small screens  -->
         
         <div class="md:hidden absolute inset-0 flex justify-between items-center px-4">
-          <button class="p-3 bg-white  rounded-full "><img class="mr-1 w-2" src="./images/icon-previous.svg" alt="">
+          <button class="p-3 bg-white  rounded-full" aria-label="icon-previous">
+            <img class="mr-1 w-2" src="./images/icon-previous.svg" alt="">
           </button>
           
-          <button class=" bg-white p-3 rounded-full "><img class="ml-1 w-2" src="./images/icon-next.svg" class="" alt="">
+          <button class=" bg-white p-3 rounded-full" aria-label="icon-next">
+            <img class="ml-1 w-2" src="./images/icon-next.svg" class="" alt="">
           </button>
         </div>
 
@@ -200,6 +202,7 @@
         <div class="hidden md:grid md:grid-cols-4 md:gap-7 md:col-span-4">
 
           <button 
+            aria-label="product-thumbnail"
             @click = "selected = 'image1' "
             :class = " selected == 'image1' ? 'rounded-2xl ; ring-2 ; ring-customOrange ; opacity-50' : '' ">
             
@@ -210,6 +213,7 @@
           </button>
           
           <button 
+            aria-label="product-thumbnail"
             @click = "selected = 'image2' "
             :class = " selected == 'image2' ? 'rounded-2xl ; ring-2 ; ring-customOrange ; opacity-50' : '' ">
             <img 
@@ -219,12 +223,14 @@
           </button>
           
           <button 
+            aria-label="product-thumbnail"
             @click = "selected = 'image3' "
             :class = "selected == 'image3' ? 'rounded-2xl ; focus:ring-2 ; focus:ring-customOrange ; focus:opacity-50' : '' ">
             <img class="rounded-2xl" src="./images/image-product-3-thumbnail.jpg" alt="">
           </button>
           
-          <button 
+          <button
+            aria-label="product-thumbnail" 
             @click = "selected = 'image4' "
             :class = "selected == 'image4' ? 'rounded-2xl ; focus:ring-2 ; focus:ring-customOrange ; focus:opacity-50' : '' ">
             <img class="rounded-2xl" src="./images/image-product-4-thumbnail.jpg" alt="">
@@ -259,13 +265,13 @@
             <div 
               class="flex justify-between items-center bg-gray-100 py-3 px-5 rounded-xl" >
               
-              <button @click = "if(count > 0) count = count - 1; ">
+              <button @click = "if(count > 0) count = count - 1; " aria-label="icon-minus">
                 <img src="./images/icon-minus.svg" alt="">
               </button>
               <p 
                 x-text = "count">
               </p>
-              <button @click = "count = count + 1">
+              <button @click = "count = count + 1" aria-label="icon-plus">
                 <img src="./images/icon-plus.svg" alt="">
               </button>
             
@@ -274,7 +280,7 @@
           
           <section class="w-full mt-3 px-5 md:col-span-2 lg:mt-0 lg:px-0">
             <button
-              @click = "addCart = true " 
+              @click = "addCart = true " aria-label="add-cart"
               class="flex justify-center items-center bg-customOrange text-paleOrange w-full rounded-lg py-4 md:py-[14px] shadow-orange-200 shadow-2xl hover:bg-orange-400">
               
               <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="hsl(25, 100%, 94%)" fill-rule="nonzero"/></svg>
