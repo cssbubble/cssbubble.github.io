@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <link rel="stylesheet" href="css/styles.css">  
+  <link rel="stylesheet" href="../images/stats/styles.css">
+  
+</head>
+<body>
+  <!-- main container -->
+  <div class="main text-white w-screen h:full md:h-screen mx-auto">
+    <!-- container with 2 main boxes  -->
+    <div class="pt-20">
+      <div class=" grid grid-cols-1 rounded-2xl mx-auto 
+                  md:max-w-3xl  md:grid-cols-2">
+        <!-- image container 1st grid  -->
+        <div class="max-w-xs md:max-w-full  md:mb-20 mx-auto bg-accent 
+                    rounded-tr-lg rounded-tl-lg
+                    md:rounded-tl-none
+                    md:rounded-br-lg md:rounded-tr-lg">
+          <img src="../images/stats/image-header-mobile.jpg" alt=""
+              class="rounded-tr-lg rounded-tl-lg md:hidden mix-blend-multiply">
+          <img src="../images/stats/image-header-desktop.jpg" alt=""
+              class="hidden md:rounded-br-lg md:rounded-tr-lg mix-blend-multiply
+              md:block  md:rounded-tl-none md:object-fill md:h-full">
+         
+        </div>
+
+        <!-- details 2nd grid  -->
+
+        <div class="card md:max-w-full max-w-xs mb-20 rounded-br-lg rounded-bl-lg mx-auto
+                    md:order-first md:mx-auto md:rounded-tl-lg
+                    md:rounded-br-none md:rounded-bl-none
+                    ">
+          <div class="my-10  mx-auto text-center 
+                      md:text-left px-10 md:px-12" id="heading">
+            <h1 class="text-2xl font-bold">Get 
+              <span class="accent">insights</span> that help your business grow.
+            </h1>
+            <p class="para my-4 md:text-xs leading-6 md:leading-5 font-light">
+              Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+              experience, and overall efficiency. 
+            </p>
+            <!-- statistics container  -->
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-y-6 md:gap-y-0 md:pt-8">
+              <div>
+                <h2 class="font-bold text-2xl md:text-lg">10k+</h2>
+                <p class="stat uppercase text-xs mt-1">companies</p>
+              </div>
+              <div>
+                <h2 class="font-bold text-2xl md:text-lg">314</h2>
+                <p class="stat uppercase text-xs mt-1">templates</p>
+              </div>
+              <div>
+                <h2 class="font-bold text-2xl md:text-lg">12M+</h2>
+                <p class="stat uppercase text-xs mt-1">queries</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="text-center pb-10 ">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" 
+                      target="_blank" class="underline">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/cssbubble" class="underline">Priyanka</a>.
+    </div>
+  </div>
+  
+
+  
+</body>
+</html>

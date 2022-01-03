@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEndMentor challenges</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs@3.7.1/dist/cdn.min.js"></script>
+    
+    <style type="text/tailwindcss">
+        @layer components {
+            .card {
+                @apply ring-2 ring-offset-2 ring-cyan-400 bg-gray-100 overflow-hidden rounded-md transition duration-300 hover:scale-105 
+            }
+        }
+    </style>
+
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body
+    style="font-family: 'Roboto Condensed', sans-serif;">
+
+    <!-- heading  -->
+    
+    <header class=" bg-slate-700 overflow-hidden">
+        <div class=" p-6 sm:max-w-5xl mx-auto mt-10 sm:flex sm:items-center sm:justify-between">
+            <div class="sm:flex sm:space-x-5 sm:ml-5">
+                <div class="flex-shrink-0">
+                    <img class="h-20 w-20 object-cover rounded-full mx-auto" src="../images/me2.jpg" alt="image of Priyanka Trivedi">
+                </div>
+                <div class="mt-4 text-center sm:mt-0 sm:pt-1 sm:text-left">
+                    <p class="text-xl font-bold text-gray-900 sm:text-2xl">Priyanka Trivedi</p>
+                    <p class="text-sm font-medium text-gray-600">Frontend Developer</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-5 justify-center mt-5 sm:mr-5">
+                <a 
+                    href="https://twitter.com/trivedipriyanka" target="_blank"
+                    class="border rounded-full bg-gray-50" >
+                        <img 
+                            src="../images/twitter.svg" 
+                            alt="twitter logo" 
+                            class="h-6 w-6 m-2">
+                </a>
+                <a 
+                    href="https://github.com/cssbubble"  target="_blank"
+                    class="border rounded-full bg-gray-50">
+                        <img 
+                            src="../images/github-brands.svg" 
+                            alt="github logo" 
+                            class="h-6 w-6 m-2">
+                </a>
+                <a 
+                    href="https://www.frontendmentor.io/profile/cssbubble" target="_blank" 
+                    class="border rounded-full bg-gray-50">
+                        <img 
+                            src="../images/frontendmentor.svg" 
+                            alt="frontendmentor logo" 
+                            class="h-6 w-6 m-2">
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- cards  -->
+    <main class="bg-slate-700 min-h-screen">
+        <!-- <section class=" w-full py-16 px-4 sm:py-24 sm:px-6 lg:max-w-5xl lg:px-8 mx-auto">
+            <div class="text-center">
+                <h1>FrontEndMentor challenges</h1>
+                <button 
+                    @click = "open = !open"
+                    class="p-2 bg-gray-50 shadow-md rounded">View
+                </button>
+            </div>
+        </section> -->
+        <div
+            class="bg-slate-700">
+            <div class="w-full mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-5xl lg:px-8">
+          
+              <div class="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8">
+                  <!-- ping  -->
+                <div class="group relative bg-green-400 shadow-md rounded-lg flex flex-col overflow-hidden">
+                  <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-96">
+                    <a href="./ping-coming-soon.html" class="grid place-items-center" target="_blank">
+                        <img 
+                        src="../images/ping/ping.png" 
+                        alt="screenshot of the this page" 
+                        class="w-full h-full object-center object-cover sm:w-full sm:h-full">
+                        <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
+                    </a>
+                  </div>
+                  <div class="flex-1 p-4 space-y-2 flex flex-col">
+                    <h3 class="text-sm font-medium text-gray-900">
+                        Ping - Coming soon page
+                    </h3>
+                    <p class="text-sm text-green-900">Form validation using Alpine js.</p>
+                    <div class="flex-1 flex flex-col justify-end">
+                      
+                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
+                      <a href="https://alpinejs.dev/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Alpine Js </a>
+                      
+                      <p class="text-base font-medium text-gray-900">FrontEndMentor Project</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- single page component  -->
+                <div class="group relative bg-teal-400 shadow-md rounded-lg flex flex-col overflow-hidden">
+                  <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
+                    <a href="./single-price-grid.html" class="grid place-items-center" target="_blank">
+                        <img 
+                            src="../images/singlePageComponent/single-page-price-component.png" 
+                            alt="screenshot of the this page" 
+                            class="w-full h-full object-center object-cover sm:w-full sm:h-full">
+                        <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>    
+                    </a>    
+                  </div>
+                  <div class="flex-1 p-4 space-y-2 flex flex-col">
+                    <h3 class="text-sm font-medium text-gray-900">
+                        Single page Price grid
+                    </h3>
+                    <p class="text-sm text-teal-900">Simple layout css grid</p>
+                    <div class="flex-1 flex flex-col justify-end">
+                      
+                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
+                      
+                      <p class="text-base font-medium text-gray-900">FrontEndMentor </p>
+                    </div>
+                  </div>
+                </div>
+    
+                <!-- e-commerce page  -->
+                <div class="group relative bg-orange-400 shadow-md rounded-lg flex flex-col overflow-hidden">
+                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
+                        <a href="./ecommerce.html" class="grid place-items-center" target="_blank">
+                            <img 
+                                src="../images/E-commercePage/E-commercePage.png" 
+                                alt="screenshot of the this page"
+                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
+                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
+                        </a>    
+                    </div>
+                    <div class="flex-1 p-4 space-y-2 flex flex-col">
+                      <h3 class="text-sm font-medium text-gray-900">
+                          E-commerce product Page
+                      </h3>
+                      <p class="text-sm text-orange-900">This was pretty interesting task. Used Alpine js and css a lot.</p>
+                      <div class="flex-1 flex flex-col justify-end">
+                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
+                        <a href="https://alpinejs.dev/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Alpine Js </a>
+                      
+                        <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
+                      </div>
+                    </div>
+                </div>
+          
+                <!-- profile card   -->
+                <div class="group relative bg-teal-400 shadow-md rounded-lg flex flex-col overflow-hidden">
+                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
+                        <a href="./profile-card-component.html" class="grid place-items-center" target="_blank">
+                            <img 
+                                src="../images/profileCardComponent/profile-card-component.png" 
+                                alt="screenshot of the this page"
+                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
+                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
+                        </a>
+                    </div>
+                    <div class="flex-1 p-4 space-y-2 flex flex-col">
+                      <h3 class="text-sm font-medium text-gray-900">
+                        Profile Card Component
+                      </h3>
+                      <p class="text-sm text-teal-900">Css Grid layout and background image adjustment</p>
+                      <div class="flex-1 flex flex-col justify-end">
+                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
+                      
+                      
+                      <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- huddle  -->
+                  <div class="group relative bg-violet-400 shadow-md rounded-lg flex flex-col overflow-hidden">
+                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
+                        <a href="./huddle.html" class="grid place-items-center" target="_blank">
+                            <img 
+                                src="../images/huddle/huddle.png" 
+                                alt="screenshot of the this page"
+                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
+                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
+                        </a>
+                    </div>
+                    <div class="flex-1 p-4 space-y-2 flex flex-col">
+                      <h3 class="text-sm font-medium text-gray-900">
+                        Huddle Landing page with a single introductory section
+                      </h3>
+                      <p class="text-sm text-violet-900">Css grid layout </p>
+                      <div class="flex-1 flex flex-col justify-end">
+                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
+                      
+                      
+                      <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- chat  -->
+                  <div class="group relative bg-purple-400 shadow-md rounded-lg flex flex-col overflow-hidden">
+                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
+                        <a href="./chatApp.html" class="grid place-items-center" target="_blank">
+                            <img 
+                                src="../images/chat/chat.png" 
+                                alt="screenshot of the this page"
+                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
+                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
+                        </a>
+                    </div>
+                    <div class="flex-1 p-4 space-y-2 flex flex-col">
+                      <h3 class="text-sm font-medium text-gray-900">
+                        Chat app CSS illustration
+                      </h3>
+                      <p class="text-sm text-purple-900">A challenging task, used many css classes to complete this challenge.</p>
+                      <div class="flex-1 flex flex-col justify-end">
+                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
+                      
+                      
+                      <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- 4 card feature  -->
+                  <div class="group relative bg-gray-400 shadow-md rounded-lg flex flex-col overflow-hidden">
+                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
+                        <a href="./fourCardFeature.html" class="grid place-items-center" target="_blank">
+                            <img 
+                                src="../images/4cards/4cards.png" 
+                                alt="screenshot of the this page"
+                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
+                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
+                        </a>
+                    </div>
+                    <div class="flex-1 p-4 space-y-2 flex flex-col">
+                      <h3 class="text-sm font-medium text-gray-900">
+                          4 Card feature Page
+                      </h3>
+                      <p class="text-sm text-gray-900">CSS Grid</p>
+                      <div class="flex-1 flex flex-col justify-end">
+                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
+                      
+                      
+                      <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
+                      </div>
+                      
+                    </div>
+                  </div>
+    
+                  <!-- testimonial  -->
+                  <div class="group relative bg-gray-400 shadow-md rounded-lg flex flex-col overflow-hidden">
+                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
+                        <a href="./testimonialGrid.html" class="grid place-items-center" target="_blank">
+                            <img 
+                                src="../images/testimon/testimon.png" 
+                                alt="screenshot of the this page"
+                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
+                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
+                        </a>
+                    </div>
+                    <div class="flex-1 p-4 space-y-2 flex flex-col">
+                      <h3 class="text-sm font-medium text-gray-900">
+                        Testimonial grid <section></section>
+                      </h3>
+                      <p class="text-sm text-gray-900">CSS Grid</p>
+                      <div class="flex-1 flex flex-col justify-end">
+                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
+                        <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- social proof  -->
+                  <div class="group relative bg-fuchsia-400 shadow-md rounded-lg flex flex-col overflow-hidden">
+                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
+                        <a href="./socialProof.html" class="grid place-items-center" target="_blank">
+                            <img 
+                                src="../images/socialProof/socialproof.png" 
+                                alt="screenshot of the this page"
+                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
+                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
+                        </a>
+                    </div>
+                    <div class="flex-1 p-4 space-y-2 flex flex-col">
+                      <h3 class="text-sm font-medium text-gray-900">
+                        Social Proof <Section></Section>
+                      </h3>
+                      <p class="text-sm text-fuchsia-900">CSS Grid</p>
+                      <div class="flex-1 flex flex-col justify-end">
+                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
+                      
+                        <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- nft  -->
+                  <div class="group relative bg-blue-400 shadow-md rounded-lg flex flex-col overflow-hidden">
+                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
+                        <a href="./nftPreview.html" class="grid place-items-center" target="_blank">
+                            <img 
+                                src="../images/nft/nft.png" 
+                                alt="screenshot of the this page"
+                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
+                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
+                        </a>
+                    </div>
+                    <div class="flex-1 p-4 space-y-2 flex flex-col">
+                      <h3 class="text-sm font-medium text-gray-900">
+                        NFT card component
+                      </h3>
+                      <p class="text-sm text-blue-900">Group Hover effect</p>
+                      <div class="flex-1 flex flex-col justify-end">
+                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
+                      
+                        <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- sunnyside  -->
+                  <div class="group relative bg-yellow-400 shadow-md rounded-lg flex flex-col overflow-hidden">
+                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
+                        <a href="./sunnySide.html" class="grid place-items-center" target="_blank">
+                            <img 
+                                src="../images/sunnyside/sunnyside.png" 
+                                alt="screenshot of the this page"
+                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
+                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
+                        </a>
+                    </div>
+                    <div class="flex-1 p-4 space-y-2 flex flex-col">
+                      <h3 class="text-sm font-medium text-gray-900">
+                        Sunnyside landing page
+                      </h3>
+                      <p class="text-sm text-yellow-900">Image vs background image</p>
+                      <div class="flex-1 flex flex-col justify-end">
+                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
+                        <a href="https://alpinejs.dev/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Alpine Js </a>
+                      
+                        <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- tip calculator  -->
+                  <div class="group relative bg-cyan-400 shadow-md rounded-lg flex flex-col overflow-hidden">
+                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
+                        <a href="./tipCalculator.html" class="grid place-items-center" target="_blank">
+                            <img 
+                                src="../images/splitter/splitter.png" 
+                                alt="screenshot of the this page"
+                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
+                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
+                        </a>
+                    </div>
+                    <div class="flex-1 p-4 space-y-2 flex flex-col">
+                      <h3 class="text-sm font-medium text-gray-900">
+                        Tip Calculator
+                      </h3>
+                      <p class="text-sm text-cyan-900">Javascript calculation</p>
+                      <div class="flex-1 flex flex-col justify-end">
+                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
+                        <a href="https://alpinejs.dev/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Alpine Js </a>
+                      
+                        <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- time track  -->
+                  <div class="group relative bg-indigo-400 shadow-md rounded-lg flex flex-col overflow-hidden">
+                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
+                        <a href="./timeTracking.html" class="grid place-items-center" target="_blank">
+                            <img 
+                                src="../images/timeTrack/timetrack.png" 
+                                alt="screenshot of the this page"
+                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
+                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
+                        </a>
+                    </div>
+                    <div class="flex-1 p-4 space-y-2 flex flex-col">
+                      <h3 class="text-sm font-medium text-gray-900">
+                        Time tracking dashboard
+                      </h3>
+                      <p class="text-sm text-indigo-900">CSS Grid, Javascript</p>
+                      <div class="flex-1 flex flex-col justify-end">
+                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
+                        <a href="https://alpinejs.dev/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Alpine Js </a>
+                      
+                        <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- 3 column preview  -->
+                  <div class="group relative bg-gray-400 shadow-md rounded-lg flex flex-col overflow-hidden">
+                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
+                        <a href="./3ColumnPreview.html" class="grid place-items-center" target="_blank">
+                            <img 
+                                src="../images/3column/3column.png" 
+                                alt="screenshot of the this page"
+                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
+                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
+                        </a>
+                    </div>
+                    <div class="flex-1 p-4 space-y-2 flex flex-col">
+                      <h3 class="text-sm font-medium text-gray-900">
+                        3-column preview card component
+                      </h3>
+                      <p class="text-sm text-gray-900">CSS Grid </p>
+                      <div class="flex-1 flex flex-col justify-end">
+                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
+                                          
+                        <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- stat preview  -->
+                  <div class="group relative bg-purple-400 shadow-md rounded-lg flex flex-col overflow-hidden">
+                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-96">
+                        <a href="./statsPreview.html" class="grid place-items-center" target="_blank">
+                            <img 
+                                src="../images/stats/stats.png" 
+                                alt="screenshot of the this page"
+                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
+                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
+                        </a>
+                    </div>
+                    <div class="flex-1 p-4 space-y-2 flex flex-col">
+                      <h3 class="text-sm font-medium text-gray-900">
+                        <span aria-hidden="true" class="absolute inset-0"></span>
+                        Stats Preview card component 
+                      </h3>
+                      <p class="text-sm text-purple-900">CSS grid, background mix blend</p>
+                      <div class="flex-1 flex flex-col justify-end">
+                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
+                                          
+                        <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- order summary  -->
+                  <div class="group relative bg-blue-400 shadow-md rounded-lg flex flex-col overflow-hidden">
+                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-96">
+                        <a href="./orderSummary.html" class="grid place-items-center" target="_blank">
+                            <img 
+                                src="../images/ordersummary/ordersummary.png" 
+                                alt="screenshot of the this page"
+                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
+                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
+                        </a>
+                    </div>
+                    <div class="flex-1 p-4 space-y-2 flex flex-col">
+                      <h3 class="text-sm font-medium text-gray-900">
+                        <span aria-hidden="true" class="absolute inset-0"></span>
+                        Order summary component
+                      </h3>
+                      <p class="text-sm text-blue-900">Flexbox, background image</p>
+                      <div class="flex-1 flex flex-col justify-end">
+                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
+                                          
+                        <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+            
+              </div>
+            </div>
+          </div>
+    
+    </main>
+    
+      
+      <!-- my code  -->
+    <!-- <div class="w-full min-h-screen px-6 py-10 md:max-w-5xl mx-auto">
+        <div class="sm:px-8 md:px-10"> -->
+            <!-- header  -->
+            <!-- <div class=" flex flex-col md:flex-row justify-center items-center gap-10 md:mt-20 sm:max-w-xl md:max-w-3xl mx-auto">
+                <img class="w-[250px] h-[250px] rounded-full object-cover" src="priyanka.jpg" alt="">
+                <div class="text-cyan-100 tracking-wide text-center md:text-left">
+                    <h1 class="text-4xl font-bold sm:text-2xl lg:text-4xl">Priyanka Trivedi</h1>
+                    <p class="sm:text-xl lg:text-2xl mt-3">Frontend Developer.</p> 
+                    <p class="sm:text-lg lg:text-xl mt-4 ">Here I have showcased all my <a class="underline" href="https://www.frontendmentor.io/home">FrontEndMentor</a> challenges at one place.</p>
+                    
+                </div>
+            </div>
+            
+            <section class="mt-8 pb-20 ">
+                
+                <ul role="list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-20"> -->
+                <!-- <ul role="list" class="flex flex-wrap gap-8 mt-20">     -->
+<!--                     
+                    <li class="relative">
+                        <div class="card">
+                            <a href="./ping-coming-soon.html" target="_blank"> 
+                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">Ping coming soon page</h3>
+                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/ping/ping.png" alt="Comming soon page">
+                            </a>
+                        </div>    
+                    </li>
+
+                    <li class="relative ">
+                        <div class="card">
+                            <a href="./single-price-grid.html" target="_blank"> 
+                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">Single Page Price Grid</h3>
+                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/singlePageComponent/single-page-price-component.png" alt="E-commerce Page">
+                            </a>
+                        </div>    
+                    </li>
+
+                    <li class="relative ">
+                        <div class="card">
+                            <a href="./ecommerce.html" target="_blank"> 
+                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">E-commerce page</h3>
+                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/E-commercePage/E-commercePage.png" alt="E-commerce Page">
+                            </a>
+                        </div>    
+                    </li>
+
+                    <li class="relative  ">
+                        <div class="card">
+                            <a href="./profile-card-component.html" target="_blank"> 
+                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">Profile Card component</h3>
+                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/profileCardComponent/profile-card-component.png" alt="Profile Card component">
+                            </a>
+                        </div>    
+                    </li>
+                    
+                    <li class="relative">
+                        <div class="card">
+                            <a href="./huddle.html" target="_blank"> 
+                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">Huddle landing page</h3>
+                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/huddle/huddle.png" alt="Huddle landing page with a single introductory section">
+                            </a>
+                        </div>    
+                    </li>
+                    <li class="relative">
+                        <div class="card">
+                            <a href="./chatApp.html" target="_blank">
+                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">Chat app CSS illustration</h3>
+                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/chat/chat.png" alt="Chat app CSS illustration">
+                            </a>
+                        </div>    
+                    </li>
+                    <li class="relative">
+                        <div class="card">
+                            <a href="./fourCardFeature.html" target="_blank">
+                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">Four card feature section</h3>
+                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/4cards/4cards.png" alt="Four card feature section">
+                            </a>
+                        </div>      
+                    </li>
+                    <li class="relative">
+                        <div class="card">
+                            <a href="./testimonialGrid.html" target="_blank">
+                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">Testimonials grid section</h3>
+                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/testimon/testimon.png" alt="Testimonials grid section">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="relative">
+                        <div class="card">
+                            <a href="./socialProof.html" target="_blank">
+                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">Social proof section</h3>
+                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/socialProof/socialproof.png" alt="Social proof section">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="relative">
+                        <div class="card">
+                            <a href="./nftPreview.html" target="_blank">
+                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">NFT preview card component</h3>
+                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/nft/nft.png" alt="NFT preview card component">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="relative">
+                        <div class="card">
+                            <a href="./sunnySide.html" target="_blank">
+                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">Sunnyside agency landing page</h3>
+                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/sunnyside/sunnyside.png" alt="Sunnyside agency landing page">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="relative">
+                        <div class="card">
+                            <a href="./tipCalculator.html" target="_blank">
+                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">Tip calculator app</h3>
+                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/splitter/splitter.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="relative">
+                        <div class="card">
+                            <a href="./timeTracking.html" target="_blank">
+                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">Time tracking dashboard</h3>
+                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/timeTrack/timetrack.png" alt="Time tracking dashboard">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="relative">
+                        <div class="card">
+                            <a href="./3ColumnPreview.html" target="_blank">
+                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">3-column preview card</h3>
+                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/3column/3column.png" alt="3-column preview card component">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="relative">
+                        <div class="card">
+                            <a href="./statsPreview.html" target="_blank">
+                                <h3 class="px-3 truncate text-2xl text-center text-cyan-900 mt-5">Stats preview card component</h3>
+                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/stats/stats.png" alt="Stats preview card component">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="relative">
+                        <div class="card">
+                            <a href="./orderSummary.html" target="_blank">
+                                <h3 class="px-3 truncate text-2xl text-center text-cyan-900 mt-5">Order summary component</h3>
+                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/ordersummary/ordersummary.png" alt="Order summary component">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div> -->
+    <!-- </div>   -->
+</body>
+</html>

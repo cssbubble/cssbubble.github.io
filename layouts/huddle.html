@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundImage: {
+            'mobileBg' : "url('/images/bg-mobile.svg')",
+            'desktopBg' : "url('/images/bg-desktop.svg')"
+          },
+          colors: {
+            'violet': 'hsl(257, 40%, 49%)',
+            'soft-magenta': 'hsl(300, 69%, 71%)'
+          },
+          'lineHeight': {
+            'extra-loose': '2.5',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <main class="flex justify-center items-center bg-violet w-full bg-mobileBg md:bg-desktopBg bg-no-repeat bg-contain" >
+    <div class="w-full min-h-screen px-16 py-12 flex-cols md:max-w-7xl mx-auto">
+      <img class="w-52" src="../images/huddle/logo.svg" alt="">
+      <div class="grid md:grid-cols-2 justify-center items-center ">
+        <img class="mt-28" src="../images/huddle/illustration-mockups.svg" alt="">
+
+        <div class="text-center tracking-widest text-white mt-24 md:text-left md:ml-10">
+          <h2 class="text-4xl font-semibold px-2 leading-normal">Build The Community Your Fans Will Love</h2>
+          <p class="text-2xl leading-normal mt-8 md:text-xl">Huddle re-imagines the way we build communities. You have a  voice, but so does you audience.
+          Create connections with your users as you engage in genuine discussion.
+          </p>
+          <button class="mt-10 bg-white text-xl text-violet px-32 py-5 rounded-full md:px-20 hover:bg-soft-magenta shadow-2xl shadow-black">Register
+          </button>
+        </div>
+      </div>
+      <div class="">
+        <div class="flex justify-center items-center mt-24 gap-6 md:justify-end">
+          
+          <button class="ring-2 ring-white ring-offset-4 ring-offset-violet rounded-full hover:bg-soft-magenta hover:ring-soft-magenta">
+            <img class="w-8 h-8 rounded-full" src="../images/huddle/facebook.svg" alt="">
+          </button>  
+
+          <button class="ring-2 ring-white ring-offset-4 ring-offset-violet rounded-full hover:bg-soft-magenta hover:ring-soft-magenta">
+            <img class="w-8 h-8 rounded-full" src="../images/huddle/twitter.svg" alt="">
+          </button>  
+
+          <button class="ring-2 ring-white ring-offset-4 ring-offset-violet rounded-full hover:bg-soft-magenta hover:ring-soft-magenta">
+            <img class="w-8 h-8 rounded-full" src="../images/huddle/instagram.svg" alt="">
+          </button>
+          
+        </div>
+      </div>
+      
+    </div>
+  </main>
+    
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/cssbubble">Priyanka</a>.
+    </p>
+  </footer>
+  </div>
+</body>
+</html>
