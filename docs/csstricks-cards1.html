@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Cards</title>
+
+    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+    <script type="tailwind-config">
+        {
+            theme: {
+                extend: {
+                    colors: {
+                        'mainBg': '#292929',
+                        'cardBg': '#404040',
+                        'cardBgDark': '#252525',
+                    },
+                    dropShadow: {
+                        '3xl': '-15px 0 15px #121212',
+                    },
+                    transitionDelay: {
+                        '0': '0ms',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            height: 1em;
+        }
+        ::-webkit-scrollbar-track {
+            background:grey;
+            border-radius: 100vw;
+            margin-inline: 2em;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3a3a3a;
+            border-radius: 100vw;
+        }
+    </style>
+</head>
+<body class="flex-col md:flex justify-center items-center h-screen bg-mainBg w-full md:max-w-4xl lg:max-w-7xl mx-auto px-4 mt-20 md:mt-0">
+    <div class="w-full mx-auto mb-20">
+        <section class=" md:h-[550px] mx-auto px-8 text-white flex md:flex-row flex-col justify-center items-center relative">
+            <div class="md:absolute md:left-0 md:z-10 relative">
+                <div class="relative w-64 h-[400px] bg-gradient-to-br from-yellow-500 via-red-500 to-blue-500 rounded-lg mr-5">
+                    <div class=" bg-black absolute inset-1.5 flex flex-col justify-end ">
+                        <div class="w-4/5 px-6 tracking-wide">
+                             <h1 class="text-3xl font-extrabold text-white ">This Design inspiration is from </h1>
+                             <p class="text-white text-sm my-8 italic font-serif">CSS-tricks.com</p>
+                        </div>
+                    </div> 
+                 </div>
+            </div>
+            
+
+            <div class="flex md:overflow-x-scroll min-h-full py-20 md:ml-64">
+                <section class="flex flex-col md:flex-row justify-start md:h-[350px] md:pl-10 -space-y-6 md:-space-y-0">
+                    <!-- 1st card  -->
+                    
+                    <article class="rounded-2xl w-4/5 mx-auto md:w-80 bg-gradient-to-b md:bg-gradient-to-r from-cardBg to-cardBgDark py-6 pl-6 pr-10 filter drop-shadow-3xl relative md:hover:origin-top-left hover:transform md:hover:rotate-3 hover:-translate-y-6 transition-all ease-in duration-200 delay-0 md:-mr-20 md:hover:mr-5">
+                        <div class="flex flex-col items-start">
+                            <div>
+                                <span class="text-sm font-bold text-gray-400 mr-1">Article</span><span class="text-gray-500 text-sm">on Nov 28, 2021</span>
+                            </div>
+                            <h2 class="text-xl font-bold text-gray-200 mt-3">I am a self tought web developer. (Hire me)</h2>
+                            <div class="flex justify-center items-center gap-5 text-[10px] font-extrabold uppercase text-yellow-600 mt-5">
+                                <a href="https://github.com/cssbubble">Git</a>
+                                <a href="https://dhimath.org/">Dhimath</a>
+                                <a href="https://www.frontendmentor.io/profile/cssbubble">FrontEndMentor</a>
+                            </div>
+                            <div class="md:absolute md:inset-x md:bottom-5 flex justify-center items-center gap-3 mt-5 md:mt-0">
+                                <img src="https://yt3.ggpht.com/yti/APfAmoG9pCxt5TggqC16rog1R2N956v3BTlWKMNJDsB4Pq8=s88-c-k-c0x00ffffff-no-rj-mo" alt="" class="w-10 h-10 rounded-full">
+                                <a href="https://twitter.com/trivedipriyanka">Priyanka</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="rounded-2xl w-4/5 mx-auto md:w-80 bg-gradient-to-b md:bg-gradient-to-r from-cardBg to-cardBgDark py-6 pl-6 pr-10 filter drop-shadow-3xl relative md:hover:origin-top-left hover:transform md:hover:rotate-3 hover:-translate-y-6 transition-all duration-200 ease-in delay-0 md:-mr-20 md:hover:mr-5 mt-5 md:mt-0">
+                        <div class="flex flex-col items-start">
+                            <div class="font-serif">
+                                <span class="text-sm font-bold text-gray-400 mr-1">Article</span><span class="text-gray-500 text-sm">on Nov 28, 2021</span>
+                            </div>
+                            <h2 class="text-xl font-bold text-gray-200 mt-3">I learned Scrollbar properties and design </h2>
+                            <div class="flex justify-center items-center gap-5 text-[10px] font-extrabold uppercase text-yellow-600 mt-5">
+                                <a href="https://www.youtube.com/watch?v=lvKK2fs6h4I&t=347s">Scrollbar CSS</a>
+                                <a href="https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw">youtube</a>
+                                <a href="https://www.kevinpowell.co/">blog</a>
+                            </div>
+                            <div class="md:absolute md:inset-x md:bottom-5 flex justify-center items-center gap-3 mt-5 md:mt-0">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLT1tLx7BgAa7_SHaXE0hDRjQu1BRihsEDZ3lmUUcg=s176-c-k-c0x00ffffff-no-rj" alt="Kewin Powell" class="w-10 h-10 rounded-full">
+                                <h2>Kevin Powell</h2>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <article class="rounded-2xl w-4/5 mx-auto md:w-80 bg-gradient-to-b md:bg-gradient-to-r from-cardBg to-cardBgDark py-6 pl-6 pr-10 filter drop-shadow-3xl relative md:hover:origin-top-left hover:transform md:hover:rotate-3 hover:-translate-y-6 transition-all ease-in duration-200 delay-0  md:-mr-20 md:hover:mr-5 mt-5 md:mt-0">
+                        <div class="flex flex-col items-start">
+                            <div>
+                                <span class="text-sm font-bold text-gray-400 mr-1">Article</span><span class="text-gray-500 text-sm">on Nov 27, 2021</span>
+                            </div>
+                            <h2 class="text-xl font-bold text-gray-200 mt-3">Tailwind classes and custom properties</h2>
+                            <div class="flex justify-center items-center gap-5 text-[10px] font-extrabold uppercase text-yellow-600 mt-5">
+                                <a href="https://www.youtube.com/c/TailwindLabs">youtube</a>
+                                <a href="https://tailwindcss.com/">doc</a>
+                                <a href="https://tailwindcss.com/docs/theme#customizing-the-default-theme">theme</a>
+                            </div>
+                            <div class="md:absolute md:inset-x md:bottom-5 flex justify-center items-center gap-3 mt-5 md:mt-0">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLSHvXZna86Q4vqUMey8PeUU_i0UzWG7EGIDygdm=s176-c-k-c0x00ffffff-no-rj" alt="tailwind labs" class="w-10 h-10 rounded-full">
+                                <h2>Tailwind Labs</h2>
+                            </div>
+                        </div>
+                    </article>
+        
+                     <article class="rounded-2xl w-4/5 mx-auto md:w-80 bg-gradient-to-b md:bg-gradient-to-r from-cardBg to-cardBgDark py-6 pl-6 pr-10 filter drop-shadow-3xl relative md:hover:origin-top-left hover:transform md:hover:rotate-3 hover:-translate-y-6 transition-all ease-in duration-200 delay-0 md:-mr-20 md:hover:mr-5 mt-5 md:mt-0">
+                        <div class="flex flex-col items-start">
+                            <div>
+                                <span class="text-sm font-bold text-gray-400 mr-1">Article</span><span class="text-gray-500 text-sm">on Nov 27, 2021</span>
+                            </div>
+                            <h2 class="text-xl font-bold text-gray-200 mt-3">Transition and Design guide</h2>
+                            <div class="flex justify-center items-center gap-5 text-[10px] font-extrabold uppercase text-yellow-600 mt-5">
+                                <a href="https://css-tricks.com/">CSS tricks</a>
+                                <a href="#">Dev tools</a>
+                                <a href="https://imagecolorpicker.com/">color picker</a>
+                            </div>
+                            <div class="md:absolute md:inset-x md:bottom-5 flex justify-center items-center gap-3 mt-5 md:mt-0">
+                                <img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/06/akqRGyta_400x400.jpg?fit=%2C&ssl=1" alt="" class="w-10 h-10 rounded-full">
+                                <h2>CSS Tricks</h2>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <article class="rounded-2xl w-4/5 mx-auto md:w-80 bg-gradient-to-b md:bg-gradient-to-r from-cardBg to-cardBgDark py-6 pl-6 pr-10 filter drop-shadow-3xl relative md:hover:origin-top-left hover:transform md:hover:rotate-3 hover:-translate-y-6 transition-all ease-in duration-200 delay-0 md:-mr-20 md:hover:mr-5 mt-5 md:mt-0">
+                        <div class="flex flex-col items-start">
+                            <div>
+                                <span class="text-sm font-bold text-gray-400 mr-1">Article</span><span class="text-gray-500 text-sm">on Nov 28, 2021</span>
+                            </div>
+                            <h2 class="text-xl font-bold text-gray-200 mt-3">Other helpful resources</h2>
+                            <div class="flex justify-center items-center gap-5 text-[10px] font-extrabold uppercase text-yellow-600 mt-5">
+                                <a href="https://www.youtube.com/c/Thirus">Thirus by Shruti</a>
+                                <a href="https://beyondco.de/blog/tailwind-jit-compiler-via-cdn">Tailwind JIT</a>
+                                
+                            </div>
+                            <div class="md:absolute md:inset-x md:bottom-5 flex justify-center items-center gap-3 mt-5 md:mt-0">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLTPNBKxm6rucEMG9m5X2KE4p3xyjzRq76BoYO1f=s176-c-k-c0x00ffffff-no-rj" alt="" class="w-10 h-10 rounded-full">
+                                <h2>Thirus</h2>
+                            </div>
+                        </div>
+                    </article>      
+                </section>
+            </div>  
+        </section>
+    </div>
+</body>
+</html>
