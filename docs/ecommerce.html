@@ -46,14 +46,14 @@
 
           <!-- mobile menu  -->
           <button @click = "open = !open" class="md:hidden" aria-label="menu">
-            <img src="../images/E-commercePage/icon-menu.svg" alt="menu icon">
+            <img src="./images/E-commercePage/icon-menu.svg" alt="menu icon">
           </button>
           <div
           x-show = "open" 
           @click.outside = "open = false "
           class="absolute inset-y-0 left-0 w-2/3 z-10 pl-5 pt-5 bg-white">
             <button @click = "open = !open" aria-label="close icon">
-              <img src="../images/E-commercePage/icon-close.svg" alt="">
+              <img src="./images/E-commercePage/icon-close.svg" alt="">
             </button>  
             <div class="-ml-5 pl-5 h-screen flex flex-col items-start font-bold mt-5 bg-white">
               <a class="mt-5" href="#">Collections</a>
@@ -66,7 +66,7 @@
 
           <!-- desktop menu  -->
           <button>
-            <img class="ml-4" src="../images/E-commercePage/logo.svg" alt="" aria-label="logo">
+            <img class="ml-4" src="./images/E-commercePage/logo.svg" alt="" aria-label="logo">
           </button>
           <div class="hidden md:flex md:justify-center md:items-center md:ml-10 gap-6 text-darkGrayishBlue">
             <a class="hover:border-b-8 hover:border-customOrange h-24 flex flex-col items-center justify-center" href="#">Collections</a>
@@ -83,7 +83,7 @@
           <button 
             @click = "open = !open"
             class="" aria-label="cart icon">
-            <img src="../images/E-commercePage/icon-cart.svg" alt="">
+            <img src="./images/E-commercePage/icon-cart.svg" alt="">
             
             <!-- empty cart  -->
             
@@ -111,7 +111,7 @@
               <div class="mt-10 pb-5 flex justify-between items-center">
                   <img
                     class="w-12 h-12 rounded" 
-                    src="../images/E-commercePage/image-product-1-thumbnail.jpg" alt="">
+                    src="./images/E-commercePage/image-product-1-thumbnail.jpg" alt="">
                   <div class=" text-gray-300 flex flex-col items-start">
                     <h3>Autumn Lmited Edition...</h3>
                     <p>$125.00 x 
@@ -122,7 +122,7 @@
                         class="font-bold text-black"></span>
                     </p>
                   </div>
-                  <img src="../images/E-commercePage/icon-delete.svg" alt="">
+                  <img src="./images/E-commercePage/icon-delete.svg" alt="">
               </div>
               <a href="#" class="w-full">
                 <div class=" bg-customOrange text-paleOrange flex justify-center items-center rounded-2xl py-3">
@@ -142,7 +142,7 @@
           <!-- avatar  -->
           <div class="ml-4 md:ml-12">
             <button class="rounded-full hover:ring-2 hover:ring-customOrange" aria-label="avatar">
-              <img class=" w-6 h-6 md:w-12 md:h-12" src="../images/E-commercePage/image-avatar.png" alt="">
+              <img class=" w-6 h-6 md:w-12 md:h-12" src="./images/E-commercePage/image-avatar.png" alt="">
             </button>
           </div>  
 
@@ -163,38 +163,38 @@
         <img 
           x-show = "selected == 'image1' "
           class="w-full md:rounded-2xl md:col-span-4" 
-          src="../images/E-commercePage/image-product-1.jpg" 
+          src="./images/E-commercePage/image-product-1.jpg" 
           alt="">
 
         <!-- image 2   -->
         <img 
           x-show = " selected == 'image2' " 
           class="w-full md:rounded-2xl md:col-span-4" 
-          src="../images/E-commercePage/image-product-2.jpg" 
+          src="./images/E-commercePage/image-product-2.jpg" 
           alt="">
 
         <!-- image 3 -->
         <img 
           x-show = " selected == 'image3' "
           class="w-full md:rounded-2xl md:col-span-4" 
-          src="../images/E-commercePage/image-product-3.jpg" 
+          src="./images/E-commercePage/image-product-3.jpg" 
           alt="">
 
         <!-- image 4  -->
         <img 
           x-show = " selected == 'image4' "
           class="w-full md:rounded-2xl md:col-span-4" 
-          src="../images/E-commercePage/image-product-4.jpg" 
+          src="./images/E-commercePage/image-product-4.jpg" 
           alt="">
         <!-- arrow icons for small screens  -->
         
         <div class="md:hidden absolute inset-0 flex justify-between items-center px-4">
           <button class="p-3 bg-white  rounded-full" aria-label="icon-previous">
-            <img class="mr-1 w-2" src="../images/E-commercePage/icon-previous.svg" alt="">
+            <img class="mr-1 w-2" src="./images/E-commercePage/icon-previous.svg" alt="">
           </button>
           
           <button class=" bg-white p-3 rounded-full" aria-label="icon-next">
-            <img class="ml-1 w-2" src="../images/E-commercePage/icon-next.svg" class="" alt="">
+            <img class="ml-1 w-2" src="./images/E-commercePage/icon-next.svg" class="" alt="">
           </button>
         </div>
 
@@ -208,7 +208,7 @@
             
             <img 
               class="rounded-2xl hover:opacity-50" 
-              src="../images/E-commercePage/image-product-1-thumbnail.jpg" 
+              src="./images/E-commercePage/image-product-1-thumbnail.jpg" 
               alt="image-product-1">
           </button>
           
@@ -218,7 +218,7 @@
             :class = " selected == 'image2' ? 'rounded-2xl ; ring-2 ; ring-customOrange ; opacity-50' : '' ">
             <img 
               class="rounded-2xl" 
-              src="../images/E-commercePage/image-product-2-thumbnail.jpg" 
+              src="./images/E-commercePage/image-product-2-thumbnail.jpg" 
               alt="">
           </button>
           
@@ -226,14 +226,14 @@
             aria-label="product-thumbnail"
             @click = "selected = 'image3' "
             :class = "selected == 'image3' ? 'rounded-2xl ; focus:ring-2 ; focus:ring-customOrange ; focus:opacity-50' : '' ">
-            <img class="rounded-2xl" src="../images/E-commercePage/image-product-3-thumbnail.jpg" alt="">
+            <img class="rounded-2xl" src="./images/E-commercePage/image-product-3-thumbnail.jpg" alt="">
           </button>
           
           <button
             aria-label="product-thumbnail" 
             @click = "selected = 'image4' "
             :class = "selected == 'image4' ? 'rounded-2xl ; focus:ring-2 ; focus:ring-customOrange ; focus:opacity-50' : '' ">
-            <img class="rounded-2xl" src="../images/E-commercePage/image-product-4-thumbnail.jpg" alt="">
+            <img class="rounded-2xl" src="./images/E-commercePage/image-product-4-thumbnail.jpg" alt="">
           </button>
         
         </div>
@@ -266,13 +266,13 @@
               class="flex justify-between items-center bg-gray-100 py-3 px-5 rounded-xl" >
               
               <button @click = "if(count > 0) count = count - 1; " aria-label="icon-minus">
-                <img src="../images/E-commercePage/icon-minus.svg" alt="">
+                <img src="./images/E-commercePage/icon-minus.svg" alt="">
               </button>
               <p 
                 x-text = "count">
               </p>
               <button @click = "count = count + 1" aria-label="icon-plus">
-                <img src="../images/E-commercePage/icon-plus.svg" alt="">
+                <img src="./images/E-commercePage/icon-plus.svg" alt="">
               </button>
             
             </div>
