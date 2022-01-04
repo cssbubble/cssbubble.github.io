@@ -4,642 +4,1139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FrontEndMentor challenges</title>
+    <title>Priyanka</title>
     <link rel="stylesheet" href="css/styles.css">
     <script defer src="https://unpkg.com/alpinejs@3.7.1/dist/cdn.min.js"></script>
-    
-    <style type="text/tailwindcss">
-        @layer components {
-            .card {
-                @apply ring-2 ring-offset-2 ring-cyan-400 bg-gray-100 overflow-hidden rounded-md transition duration-300 hover:scale-105 
-            }
-        }
-    </style>
-
-    <!-- fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
 </head>
-<body
-    style="font-family: 'Roboto Condensed', sans-serif;">
-
-    <!-- heading  -->
-    
-    <header class=" bg-slate-700 overflow-hidden">
-        <div class=" p-6 sm:max-w-5xl mx-auto mt-10 sm:flex sm:items-center sm:justify-between">
-            <div class="sm:flex sm:space-x-5 sm:ml-5">
-                <div class="flex-shrink-0">
-                    <img class="h-20 w-20 object-cover rounded-full mx-auto" src="../images/me2.jpg" alt="image of Priyanka Trivedi">
-                </div>
-                <div class="mt-4 text-center sm:mt-0 sm:pt-1 sm:text-left">
-                    <p class="text-xl font-bold text-gray-900 sm:text-2xl">Priyanka Trivedi</p>
-                    <p class="text-sm font-medium text-gray-600">Frontend Developer</p>
-                </div>
-            </div>
-            <div class="flex items-center gap-5 justify-center mt-5 sm:mr-5">
-                <a 
-                    href="https://twitter.com/trivedipriyanka" target="_blank"
-                    class="border rounded-full bg-gray-50" >
-                        <img 
-                            src="../images/twitter.svg" 
-                            alt="twitter logo" 
-                            class="h-6 w-6 m-2">
-                </a>
-                <a 
-                    href="https://github.com/cssbubble"  target="_blank"
-                    class="border rounded-full bg-gray-50">
-                        <img 
-                            src="../images/github-brands.svg" 
-                            alt="github logo" 
-                            class="h-6 w-6 m-2">
-                </a>
-                <a 
-                    href="https://www.frontendmentor.io/profile/cssbubble" target="_blank" 
-                    class="border rounded-full bg-gray-50">
-                        <img 
-                            src="../images/frontendmentor.svg" 
-                            alt="frontendmentor logo" 
-                            class="h-6 w-6 m-2">
-                </a>
-            </div>
-        </div>
-    </header>
-    <!-- cards  -->
-    <main class="bg-slate-700 min-h-screen">
-        <!-- <section class=" w-full py-16 px-4 sm:py-24 sm:px-6 lg:max-w-5xl lg:px-8 mx-auto">
-            <div class="text-center">
-                <h1>FrontEndMentor challenges</h1>
-                <button 
-                    @click = "open = !open"
-                    class="p-2 bg-gray-50 shadow-md rounded">View
-                </button>
-            </div>
-        </section> -->
-        <div
-            class="bg-slate-700">
-            <div class="w-full mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-5xl lg:px-8">
-          
-              <div class="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8">
-                  <!-- ping  -->
-                <div class="group relative bg-green-400 shadow-md rounded-lg flex flex-col overflow-hidden">
-                  <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-96">
-                    <a href="./ping-coming-soon.html" class="grid place-items-center" target="_blank">
-                        <img 
-                        src="../images/ping/ping.png" 
-                        alt="screenshot of the this page" 
-                        class="w-full h-full object-center object-cover sm:w-full sm:h-full">
-                        <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
+<body>
+    <div class="relative flex lg:max-w-7xl mx-auto gap-5 ">
+        <aside class="fixed inset-y-0 w-20 lg:w-48">
+            <div class="flex flex-col justify-center items-center gap-y-1 py-2 sm:items-end ">
+                <!-- twitter logo  -->
+                <div class="flex lg:justify-start w-full justify-center sm:justify-end">
+                    <a href="#" class="p-3 rounded-full hover:bg-sky-50">
+                        <img src="../images/twitter-seeklogo.com.svg" alt="twitter logo" class="w-8 h-8">
                     </a>
-                  </div>
-                  <div class="flex-1 p-4 space-y-2 flex flex-col">
-                    <h3 class="text-sm font-medium text-gray-900">
-                        Ping - Coming soon page
-                    </h3>
-                    <p class="text-sm text-green-900">Form validation using Alpine js.</p>
-                    <div class="flex-1 flex flex-col justify-end">
-                      
-                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
-                      <a href="https://alpinejs.dev/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Alpine Js </a>
-                      
-                      <p class="text-base font-medium text-gray-900">FrontEndMentor Project</p>
-                    </div>
-                  </div>
                 </div>
-          
-                <!-- single page component  -->
-                <div class="group relative bg-teal-400 shadow-md rounded-lg flex flex-col overflow-hidden">
-                  <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
-                    <a href="./single-price-grid.html" class="grid place-items-center" target="_blank">
-                        <img 
-                            src="../images/singlePageComponent/single-page-price-component.png" 
-                            alt="screenshot of the this page" 
-                            class="w-full h-full object-center object-cover sm:w-full sm:h-full">
-                        <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>    
-                    </a>    
-                  </div>
-                  <div class="flex-1 p-4 space-y-2 flex flex-col">
-                    <h3 class="text-sm font-medium text-gray-900">
-                        Single page Price grid
-                    </h3>
-                    <p class="text-sm text-teal-900">Simple layout css grid</p>
-                    <div class="flex-1 flex flex-col justify-end">
-                      
-                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
-                      
-                      <p class="text-base font-medium text-gray-900">FrontEndMentor </p>
-                    </div>
-                  </div>
-                </div>
-    
-                <!-- e-commerce page  -->
-                <div class="group relative bg-orange-400 shadow-md rounded-lg flex flex-col overflow-hidden">
-                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
-                        <a href="./ecommerce.html" class="grid place-items-center" target="_blank">
-                            <img 
-                                src="../images/E-commercePage/E-commercePage.png" 
-                                alt="screenshot of the this page"
-                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
-                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
-                        </a>    
-                    </div>
-                    <div class="flex-1 p-4 space-y-2 flex flex-col">
-                      <h3 class="text-sm font-medium text-gray-900">
-                          E-commerce product Page
-                      </h3>
-                      <p class="text-sm text-orange-900">This was pretty interesting task. Used Alpine js and css a lot.</p>
-                      <div class="flex-1 flex flex-col justify-end">
-                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
-                        <a href="https://alpinejs.dev/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Alpine Js </a>
-                      
-                        <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
-                      </div>
-                    </div>
-                </div>
-          
-                <!-- profile card   -->
-                <div class="group relative bg-teal-400 shadow-md rounded-lg flex flex-col overflow-hidden">
-                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
-                        <a href="./profile-card-component.html" class="grid place-items-center" target="_blank">
-                            <img 
-                                src="../images/profileCardComponent/profile-card-component.png" 
-                                alt="screenshot of the this page"
-                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
-                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
-                        </a>
-                    </div>
-                    <div class="flex-1 p-4 space-y-2 flex flex-col">
-                      <h3 class="text-sm font-medium text-gray-900">
-                        Profile Card Component
-                      </h3>
-                      <p class="text-sm text-teal-900">Css Grid layout and background image adjustment</p>
-                      <div class="flex-1 flex flex-col justify-end">
-                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
-                      
-                      
-                      <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <!-- huddle  -->
-                  <div class="group relative bg-violet-400 shadow-md rounded-lg flex flex-col overflow-hidden">
-                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
-                        <a href="./huddle.html" class="grid place-items-center" target="_blank">
-                            <img 
-                                src="../images/huddle/huddle.png" 
-                                alt="screenshot of the this page"
-                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
-                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
-                        </a>
-                    </div>
-                    <div class="flex-1 p-4 space-y-2 flex flex-col">
-                      <h3 class="text-sm font-medium text-gray-900">
-                        Huddle Landing page with a single introductory section
-                      </h3>
-                      <p class="text-sm text-violet-900">Css grid layout </p>
-                      <div class="flex-1 flex flex-col justify-end">
-                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
-                      
-                      
-                      <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <!-- chat  -->
-                  <div class="group relative bg-purple-400 shadow-md rounded-lg flex flex-col overflow-hidden">
-                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
-                        <a href="./chatApp.html" class="grid place-items-center" target="_blank">
-                            <img 
-                                src="../images/chat/chat.png" 
-                                alt="screenshot of the this page"
-                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
-                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
-                        </a>
-                    </div>
-                    <div class="flex-1 p-4 space-y-2 flex flex-col">
-                      <h3 class="text-sm font-medium text-gray-900">
-                        Chat app CSS illustration
-                      </h3>
-                      <p class="text-sm text-purple-900">A challenging task, used many css classes to complete this challenge.</p>
-                      <div class="flex-1 flex flex-col justify-end">
-                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
-                      
-                      
-                      <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <!-- 4 card feature  -->
-                  <div class="group relative bg-gray-400 shadow-md rounded-lg flex flex-col overflow-hidden">
-                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
-                        <a href="./fourCardFeature.html" class="grid place-items-center" target="_blank">
-                            <img 
-                                src="../images/4cards/4cards.png" 
-                                alt="screenshot of the this page"
-                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
-                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
-                        </a>
-                    </div>
-                    <div class="flex-1 p-4 space-y-2 flex flex-col">
-                      <h3 class="text-sm font-medium text-gray-900">
-                          4 Card feature Page
-                      </h3>
-                      <p class="text-sm text-gray-900">CSS Grid</p>
-                      <div class="flex-1 flex flex-col justify-end">
-                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
-                      
-                      
-                      <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
-                      </div>
-                      
-                    </div>
-                  </div>
-    
-                  <!-- testimonial  -->
-                  <div class="group relative bg-gray-400 shadow-md rounded-lg flex flex-col overflow-hidden">
-                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
-                        <a href="./testimonialGrid.html" class="grid place-items-center" target="_blank">
-                            <img 
-                                src="../images/testimon/testimon.png" 
-                                alt="screenshot of the this page"
-                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
-                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
-                        </a>
-                    </div>
-                    <div class="flex-1 p-4 space-y-2 flex flex-col">
-                      <h3 class="text-sm font-medium text-gray-900">
-                        Testimonial grid <section></section>
-                      </h3>
-                      <p class="text-sm text-gray-900">CSS Grid</p>
-                      <div class="flex-1 flex flex-col justify-end">
-                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
-                        <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <!-- social proof  -->
-                  <div class="group relative bg-fuchsia-400 shadow-md rounded-lg flex flex-col overflow-hidden">
-                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
-                        <a href="./socialProof.html" class="grid place-items-center" target="_blank">
-                            <img 
-                                src="../images/socialProof/socialproof.png" 
-                                alt="screenshot of the this page"
-                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
-                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
-                        </a>
-                    </div>
-                    <div class="flex-1 p-4 space-y-2 flex flex-col">
-                      <h3 class="text-sm font-medium text-gray-900">
-                        Social Proof <Section></Section>
-                      </h3>
-                      <p class="text-sm text-fuchsia-900">CSS Grid</p>
-                      <div class="flex-1 flex flex-col justify-end">
-                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
-                      
-                        <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <!-- nft  -->
-                  <div class="group relative bg-blue-400 shadow-md rounded-lg flex flex-col overflow-hidden">
-                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
-                        <a href="./nftPreview.html" class="grid place-items-center" target="_blank">
-                            <img 
-                                src="../images/nft/nft.png" 
-                                alt="screenshot of the this page"
-                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
-                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
-                        </a>
-                    </div>
-                    <div class="flex-1 p-4 space-y-2 flex flex-col">
-                      <h3 class="text-sm font-medium text-gray-900">
-                        NFT card component
-                      </h3>
-                      <p class="text-sm text-blue-900">Group Hover effect</p>
-                      <div class="flex-1 flex flex-col justify-end">
-                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
-                      
-                        <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <!-- sunnyside  -->
-                  <div class="group relative bg-yellow-400 shadow-md rounded-lg flex flex-col overflow-hidden">
-                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
-                        <a href="./sunnySide.html" class="grid place-items-center" target="_blank">
-                            <img 
-                                src="../images/sunnyside/sunnyside.png" 
-                                alt="screenshot of the this page"
-                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
-                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
-                        </a>
-                    </div>
-                    <div class="flex-1 p-4 space-y-2 flex flex-col">
-                      <h3 class="text-sm font-medium text-gray-900">
-                        Sunnyside landing page
-                      </h3>
-                      <p class="text-sm text-yellow-900">Image vs background image</p>
-                      <div class="flex-1 flex flex-col justify-end">
-                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
-                        <a href="https://alpinejs.dev/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Alpine Js </a>
-                      
-                        <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <!-- tip calculator  -->
-                  <div class="group relative bg-cyan-400 shadow-md rounded-lg flex flex-col overflow-hidden">
-                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
-                        <a href="./tipCalculator.html" class="grid place-items-center" target="_blank">
-                            <img 
-                                src="../images/splitter/splitter.png" 
-                                alt="screenshot of the this page"
-                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
-                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
-                        </a>
-                    </div>
-                    <div class="flex-1 p-4 space-y-2 flex flex-col">
-                      <h3 class="text-sm font-medium text-gray-900">
-                        Tip Calculator
-                      </h3>
-                      <p class="text-sm text-cyan-900">Javascript calculation</p>
-                      <div class="flex-1 flex flex-col justify-end">
-                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
-                        <a href="https://alpinejs.dev/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Alpine Js </a>
-                      
-                        <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <!-- time track  -->
-                  <div class="group relative bg-indigo-400 shadow-md rounded-lg flex flex-col overflow-hidden">
-                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
-                        <a href="./timeTracking.html" class="grid place-items-center" target="_blank">
-                            <img 
-                                src="../images/timeTrack/timetrack.png" 
-                                alt="screenshot of the this page"
-                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
-                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
-                        </a>
-                    </div>
-                    <div class="flex-1 p-4 space-y-2 flex flex-col">
-                      <h3 class="text-sm font-medium text-gray-900">
-                        Time tracking dashboard
-                      </h3>
-                      <p class="text-sm text-indigo-900">CSS Grid, Javascript</p>
-                      <div class="flex-1 flex flex-col justify-end">
-                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
-                        <a href="https://alpinejs.dev/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Alpine Js </a>
-                      
-                        <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <!-- 3 column preview  -->
-                  <div class="group relative bg-gray-400 shadow-md rounded-lg flex flex-col overflow-hidden">
-                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-60">
-                        <a href="./3ColumnPreview.html" class="grid place-items-center" target="_blank">
-                            <img 
-                                src="../images/3column/3column.png" 
-                                alt="screenshot of the this page"
-                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
-                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
-                        </a>
-                    </div>
-                    <div class="flex-1 p-4 space-y-2 flex flex-col">
-                      <h3 class="text-sm font-medium text-gray-900">
-                        3-column preview card component
-                      </h3>
-                      <p class="text-sm text-gray-900">CSS Grid </p>
-                      <div class="flex-1 flex flex-col justify-end">
-                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
-                                          
-                        <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <!-- stat preview  -->
-                  <div class="group relative bg-purple-400 shadow-md rounded-lg flex flex-col overflow-hidden">
-                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-96">
-                        <a href="./statsPreview.html" class="grid place-items-center" target="_blank">
-                            <img 
-                                src="../images/stats/stats.png" 
-                                alt="screenshot of the this page"
-                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
-                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
-                        </a>
-                    </div>
-                    <div class="flex-1 p-4 space-y-2 flex flex-col">
-                      <h3 class="text-sm font-medium text-gray-900">
-                        <span aria-hidden="true" class="absolute inset-0"></span>
-                        Stats Preview card component 
-                      </h3>
-                      <p class="text-sm text-purple-900">CSS grid, background mix blend</p>
-                      <div class="flex-1 flex flex-col justify-end">
-                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
-                                          
-                        <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
-                      </div>
-                    </div>
-                  </div>
-    
-                  <!-- order summary  -->
-                  <div class="group relative bg-blue-400 shadow-md rounded-lg flex flex-col overflow-hidden">
-                    <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-96">
-                        <a href="./orderSummary.html" class="grid place-items-center" target="_blank">
-                            <img 
-                                src="../images/ordersummary/ordersummary.png" 
-                                alt="screenshot of the this page"
-                                class="w-full h-full object-center object-cover sm:w-full sm:h-full">
-                            <span class="absolute opacity-0 group-hover:opacity-100 bg-gray-50 ring-2 rounded-md  p-2">View</span>
-                        </a>
-                    </div>
-                    <div class="flex-1 p-4 space-y-2 flex flex-col">
-                      <h3 class="text-sm font-medium text-gray-900">
-                        <span aria-hidden="true" class="absolute inset-0"></span>
-                        Order summary component
-                      </h3>
-                      <p class="text-sm text-blue-900">Flexbox, background image</p>
-                      <div class="flex-1 flex flex-col justify-end">
-                        <a href="https://tailwindcss.com/" target="_blank" class="text-sm italic text-gray-500 underline underline-offset-2">Tailwind css </a>
-                                          
-                        <p class="text-base font-medium text-gray-900">FrontEndMentor</p>
-                      </div>
-                    </div>
-                  </div>
-                  
-            
-              </div>
-            </div>
-          </div>
-    
-    </main>
-    
-      
-      <!-- my code  -->
-    <!-- <div class="w-full min-h-screen px-6 py-10 md:max-w-5xl mx-auto">
-        <div class="sm:px-8 md:px-10"> -->
-            <!-- header  -->
-            <!-- <div class=" flex flex-col md:flex-row justify-center items-center gap-10 md:mt-20 sm:max-w-xl md:max-w-3xl mx-auto">
-                <img class="w-[250px] h-[250px] rounded-full object-cover" src="priyanka.jpg" alt="">
-                <div class="text-cyan-100 tracking-wide text-center md:text-left">
-                    <h1 class="text-4xl font-bold sm:text-2xl lg:text-4xl">Priyanka Trivedi</h1>
-                    <p class="sm:text-xl lg:text-2xl mt-3">Frontend Developer.</p> 
-                    <p class="sm:text-lg lg:text-xl mt-4 ">Here I have showcased all my <a class="underline" href="https://www.frontendmentor.io/home">FrontEndMentor</a> challenges at one place.</p>
-                    
-                </div>
-            </div>
-            
-            <section class="mt-8 pb-20 ">
                 
-                <ul role="list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-20"> -->
-                <!-- <ul role="list" class="flex flex-wrap gap-8 mt-20">     -->
-<!--                     
-                    <li class="relative">
-                        <div class="card">
-                            <a href="./ping-coming-soon.html" target="_blank"> 
-                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">Ping coming soon page</h3>
-                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/ping/ping.png" alt="Comming soon page">
-                            </a>
-                        </div>    
-                    </li>
-
-                    <li class="relative ">
-                        <div class="card">
-                            <a href="./single-price-grid.html" target="_blank"> 
-                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">Single Page Price Grid</h3>
-                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/singlePageComponent/single-page-price-component.png" alt="E-commerce Page">
-                            </a>
-                        </div>    
-                    </li>
-
-                    <li class="relative ">
-                        <div class="card">
-                            <a href="./ecommerce.html" target="_blank"> 
-                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">E-commerce page</h3>
-                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/E-commercePage/E-commercePage.png" alt="E-commerce Page">
-                            </a>
-                        </div>    
-                    </li>
-
-                    <li class="relative  ">
-                        <div class="card">
-                            <a href="./profile-card-component.html" target="_blank"> 
-                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">Profile Card component</h3>
-                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/profileCardComponent/profile-card-component.png" alt="Profile Card component">
-                            </a>
-                        </div>    
-                    </li>
+                <!-- home icon  -->
+                <a href="" class="p-3 rounded-full hover:bg-gray-50 sm:flex       items-center justify-center sm:justify-end lg:justify-start lg:w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                    </svg>
+                    <span class="hidden lg:inline-block lg:ml-3 font-light focus:font-bold text-lg">Home</span>
+                </a>
+                <!-- search  -->
+                <a href="" class="p-3 rounded-full hover:bg-gray-50 sm:flex items-center justify-center sm:justify-end lg:justify-start lg:w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                      </svg>
+                      <!-- hash  -->
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 hidden md:inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14" />
+                      </svg>  
+                      <span class="hidden lg:inline-block lg:ml-3 font-light text-lg">Search</span>
+                </a>
+                <!-- bell  -->
+                <a href="" class="p-3 rounded-full hover:bg-gray-50 sm:flex sm:items-center sm:justify-end lg:justify-start lg:w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                    </svg>
+                    <span class="hidden lg:inline-block lg:ml-3 font-light text-lg">Notifications</span>
+                </a>
+                <!-- message  -->
+                <a href="" class="p-3 rounded-full hover:bg-gray-50 sm:flex sm:items-center sm:justify-end lg:justify-start lg:w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    <span class="hidden lg:inline-block lg:ml-3 font-light text-lg">Messages</span>
+                </a>
+                <!-- bookmark  -->
+                <a href="" class="p-3 rounded-full hover:bg-gray-50 sm:flex sm:items-center sm:justify-end lg:justify-start lg:w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                    </svg>
+                    <span class="hidden lg:inline-block lg:ml-3 font-light text-lg">Bookmarks</span>
+                </a>
+                <!-- list  -->
+                <a href="" class="p-3 rounded-full hover:bg-gray-50 sm:flex sm:items-center sm:justify-end lg:justify-start lg:w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                    </svg>
+                    <span class="hidden lg:inline-block lg:ml-3 font-light text-lg">List</span>
+                </a>
+                <!-- profile  -->
+                <a href="https://twitter.com/trivedipriyanka" target="_blank" class="p-3 rounded-full hover:bg-gray-50 sm:flex sm:items-center sm:justify-end lg:justify-start lg:w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                    <span class="hidden lg:inline-block lg:ml-3 font-light text-lg">Profile</span>
+                </a>
+                <!-- more  -->
+                <a href="" class="p-3 rounded-full hover:bg-gray-50 sm:flex sm:items-center sm:justify-end lg:justify-start lg:w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span class="hidden lg:inline-block lg:ml-3 font-light text-lg">More</span>
+                </a>
+                <!-- tweet  -->
+                <div class="flex sm:justify-end lg:justify-center w-full">
+                    <a href="mailto:cssbubble@gmail.com" class="p-3 rounded-full hover:bg-gray-50 lg:hidden">
+                        <img src="../images/1060_icons_compose-tweet.webp" alt="" class="w-8 h-8 rounded-full ">
+                    </a>
+                    <button class="text-white bg-[#1DA1F2] rounded-full hidden lg:inline-block py-3 font-bold px-10 mr-5"><a href="mailto:cssbubble@gmail.com">Hire me</a> </button>
+                </div> 
+            </div>    
+        </aside>
+        <main class="ml-20 lg:ml-48 w-full lg:mr-60 border-x border-gray-200">
+            <header>
+                <div class="flex justify-between items-center p-3 ">
+                    <h1 class="text-xl font-semibold">Home</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                      </svg>
+                </div>
+                <div x-data = "{ focused: false}" 
+                    class="grid grid-cols-8 gap-4 p-3">
                     
-                    <li class="relative">
-                        <div class="card">
-                            <a href="./huddle.html" target="_blank"> 
-                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">Huddle landing page</h3>
-                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/huddle/huddle.png" alt="Huddle landing page with a single introductory section">
+                    <img src="../images/me2.jpg" alt="priyanka's profile picture" class="w-12 h-12 rounded-full object-cover col-span-1">
+                    
+                    <!-- tweet input, span, icons and cta button  -->
+                    <div class="col-span-7 mt-3">
+                        <input 
+                        type="text" 
+                        placeholder="What's happening?" 
+                        @click = "focused = true"
+                        class="text-xl placeholder:text-gray-600 tracking-wide focus:outline-none">
+                        <div  
+                        x-show = "focused"
+                        class="flex flex-col mt-2">    
+                            <p class="flex mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#1DA1F2]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span class="text-[#1DA1F2] text-sm font-bold ml-1">Everyone can reply</span>
+                            </p>
+                            <hr>
+                        </div>
+                        
+                        <!-- icons and tweet button  -->
+                        <div class="flex justify-between items-center mt-3">
+                            <div class="flex justify-start gap-3">
+                                <!-- image svg  -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                  </svg>
+                                <!-- graph   -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                  </svg>
+                                <!-- smile    -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>
+                                <!-- schedule    -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                  </svg>
+                                <!-- map    -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                  </svg>
+                            </div>
+                            <button class="bg-sky-500 py-2 px-4 font-semibold text-white rounded-full"><a href="mailto:cssbubble@gmail.com">Hire me</a></button>
+                        </div>   
+                    </div>
+                </div>
+
+                <hr>      
+            </header>
+            <section x-data ="{open: true}" class="">
+                <h2 class="text-center py-3 hover:bg-gray-50">
+                    <button
+                    @click = "open = !open" 
+                    class="text-sky-500 font-semibold"
+                    :class = " open ? 'hidden' : ''">
+                        Show 20 Activities
+                    </button> 
+                </h2>
+                <hr :class="open ? 'hidden' : '' ">
+
+                <!-- challenges and activities  -->
+                <section x-show = "open" class="grid -mt-6">
+                    <!-- learnawesome  -->
+                    <div class="grid grid-cols-8 hover:bg-gray-50 py-3 pr-10 mx-auto">
+                        <div class="col-span-1 place-self-center ml-2">
+                            <a href="https://learnawesome.org/" target="_blank" class="text-gray-500">
+                                <img src="../images/learnawesome.png" alt="learn awesome logo" class="w-20 h-auto">
                             </a>
-                        </div>    
-                    </li>
-                    <li class="relative">
-                        <div class="card">
+                            
+                        </div>
+                        <div class="col-span-7 ml-2">
+                            <a href="https://learnawesome.org/" target="_blank" class="flex ">
+                                <h3 class="font-semibold hover:underline">Learn Awesome</h3>
+                                <span class="text-gray-500 ml-2">@Learn_Awesome</span> 
+                            </a>
+                            
+                            <p>I contrubuted in this awesome open source project by fixing some UI and UX design. You can find many learning resourced here for free. </p>
+                        </div>
+                        
+                        <div class="col-start-2 col-span-7 ml-2 mt-4 rounded-xl overflow-hidden">
+                            <a href="https://learnawesome.org/" target="_blank">
+                                <img src="https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGVhcm5pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" alt="A learner learning on a computer">
+                            </a>    
+                        </div>
+                        <div
+                        class="col-start-2 col-span-7 flex justify-around mt-4">
+                            <!-- chat  -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- retweet    -->
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- like    -->
+                            <button 
+                            x-data ="{liked : false, likedCount: 2}" 
+                            @click ="liked = !liked; likedCount += (liked ? 1 : -1)" 
+                            class="flex">
+                                <svg :class="liked ? 'text-red-700' : '' " 
+                                :fill ="liked ? 'currentColor' : 'none' "
+                                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                  </svg>
+                                  <span x-text="likedCount" class="ml-4"></span>
+                            </button>
+                            
+                            <!-- upload    -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                                  </svg>
+                            </button>      
+                        </div>
+                    </div>
+
+                    <hr class="w-full">
+
+                    <!-- frontendmentor E-commerce page -->
+                    <div class="grid grid-cols-8 hover:bg-gray-50 py-3 pr-10 mx-auto">
+                        <div class="col-span-1 place-self-center ml-2">
+                            <a href="https://www.frontendmentor.io/home" target="_blank" class="text-gray-500">
+                                <img src="../images/E-commercePage/E-commercePage.png" alt="challenge logo" class="w-16 h-auto">
+                            </a>
+                            
+                        </div>
+                        <div class="col-span-7 ml-2">
+                            <a href="https://www.frontendmentor.io/profile/cssbubble" target="_blank" class="flex ">
+                                <h3 class="font-semibold hover:underline">E-commerce page</h3>
+                                <span class="text-gray-500 ml-2">@frontendmentor</span> 
+                            </a>
+                            
+                            <p>Made this E-commerce page using Tailwind Css and Alpine js. Really a beatiful experience while making this page as I could compile all my knowledge of HTML, CSS and Javascript. </p>
+                        </div>
+                        
+                        <div class="col-start-2 col-span-7 ml-2 mt-4 rounded-xl overflow-hidden">
+                            <a href="./ecommerce.html" target="_blank">
+                                <img src="../images/E-commercePage/E-commercePage.png" alt="E-commercePage">
+                            </a>
+                        </div>
+                        <div 
+                        class="col-start-2 col-span-7 flex justify-around mt-4">
+                            <!-- chat  -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- retweet    -->
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- like    -->
+                            <button 
+                            x-data ="{liked : false, likedCount: 4}" 
+                            @click ="liked = !liked; likedCount += (liked ? 1 : -1)" 
+                            class="flex">
+                                <svg :class="liked ? 'text-red-700' : '' " 
+                                :fill ="liked ? 'currentColor' : 'none' "
+                                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                  </svg>
+                                  <span x-text="likedCount" class="ml-4"></span>
+                            </button>
+                            
+                            <!-- upload    -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                                  </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- frontendmentor chat app  -->
+                    <div class="grid grid-cols-8 hover:bg-gray-50 py-3 pr-10 mx-auto">
+                        <div class="col-span-1 place-self-center ml-2">
+                            <a href="https://www.frontendmentor.io/home" target="_blank" class="text-gray-500">
+                                <img src="../images/chat/chat.png" alt="front end mentor logo" class="w-16 h-auto">
+                            </a>    
+                        </div>
+                        <div class="col-span-7 ml-2">
+                            <a href="https://www.frontendmentor.io/profile/cssbubble" target="_blank" class="flex ">
+                                <h3 class="font-semibold hover:underline">Chat app</h3>
+                                <span class="text-gray-500 ml-2">@frontendmentor</span> 
+                            </a>
+                            
+                            <p>In this challenge I had to use many css properties including relative and absolute position to make it look like mobile screen. I took guidence from <a href="https://twitter.com/simonswiss" class="underline text-purple-600 font-semibold">Simonswiss's</a> this <a href="https://www.youtube.com/watch?v=eSzNNYk7nVU&t=177s" class="underline text-purple-600 font-semibold"> video </a></p>
+                        </div>
+                        
+                        <div class="col-start-2 col-span-7 ml-2 mt-4 rounded-xl overflow-hidden">
                             <a href="./chatApp.html" target="_blank">
-                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">Chat app CSS illustration</h3>
-                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/chat/chat.png" alt="Chat app CSS illustration">
-                            </a>
-                        </div>    
-                    </li>
-                    <li class="relative">
-                        <div class="card">
-                            <a href="./fourCardFeature.html" target="_blank">
-                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">Four card feature section</h3>
-                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/4cards/4cards.png" alt="Four card feature section">
-                            </a>
-                        </div>      
-                    </li>
-                    <li class="relative">
-                        <div class="card">
-                            <a href="./testimonialGrid.html" target="_blank">
-                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">Testimonials grid section</h3>
-                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/testimon/testimon.png" alt="Testimonials grid section">
+                                <img src="../images/chat/chat.png" alt="E-commercePage">
                             </a>
                         </div>
-                    </li>
-                    <li class="relative">
-                        <div class="card">
-                            <a href="./socialProof.html" target="_blank">
-                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">Social proof section</h3>
-                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/socialProof/socialproof.png" alt="Social proof section">
-                            </a>
+                        <div 
+                        class="col-start-2 col-span-7 flex justify-around mt-4">
+                            <!-- chat  -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- retweet    -->
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- like    -->
+                            <button 
+                            x-data ="{liked : false, likedCount: 4}" 
+                            @click ="liked = !liked; likedCount += (liked ? 1 : -1)" 
+                            class="flex">
+                                <svg :class="liked ? 'text-red-700' : '' " 
+                                :fill ="liked ? 'currentColor' : 'none' "
+                                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                  </svg>
+                                  <span x-text="likedCount" class="ml-4"></span>
+                            </button>
+                            
+                            <!-- upload    -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                                  </svg>
+                            </button>
                         </div>
-                    </li>
-                    <li class="relative">
-                        <div class="card">
-                            <a href="./nftPreview.html" target="_blank">
-                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">NFT preview card component</h3>
-                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/nft/nft.png" alt="NFT preview card component">
-                            </a>
+                    </div>
+
+                    <!-- time track  -->
+                    <div class="grid grid-cols-8 hover:bg-gray-50 py-3 pr-10 mx-auto">
+                        <div class="col-span-1 place-self-center ml-2">
+                            <a href="https://www.frontendmentor.io/profile/cssbubble" target="_blank" class="text-gray-500">
+                                <img src="../images/timeTrack/timetrack.png" alt="front end mentor logo" class="w-16 h-auto">
+                            </a>    
                         </div>
-                    </li>
-                    <li class="relative">
-                        <div class="card">
-                            <a href="./sunnySide.html" target="_blank">
-                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">Sunnyside agency landing page</h3>
-                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/sunnyside/sunnyside.png" alt="Sunnyside agency landing page">
+                        <div class="col-span-7 ml-2">
+                            <a href="https://www.frontendmentor.io/home" target="_blank" class="flex ">
+                                <h3 class="font-semibold hover:underline">Time track </h3>
+                                <span class="text-gray-500 ml-2">@frontendmentor</span> 
                             </a>
+                            
+                            <p>Extensive use of <a href="https://alpinejs.dev/" class="font-semibold text-indigo-600 underline">Alpine js</a>  and <a href="https://tailwindcss.com/" class="font-semibold text-indigo-600 underline">Tailwind</a> css grid / flex properties were usefull in making this page. Positioning background svgs was fun too. </p>
                         </div>
-                    </li>
-                    <li class="relative">
-                        <div class="card">
-                            <a href="./tipCalculator.html" target="_blank">
-                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">Tip calculator app</h3>
-                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/splitter/splitter.png" alt="">
-                            </a>
-                        </div>
-                    </li>
-                    <li class="relative">
-                        <div class="card">
+                        
+                        <div class="col-start-2 col-span-7 ml-2 mt-4 rounded-xl overflow-hidden">
                             <a href="./timeTracking.html" target="_blank">
-                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">Time tracking dashboard</h3>
-                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/timeTrack/timetrack.png" alt="Time tracking dashboard">
+                                <img src="../images/timeTrack/timetrack.png" alt="E-commercePage">
                             </a>
                         </div>
-                    </li>
-                    <li class="relative">
-                        <div class="card">
-                            <a href="./3ColumnPreview.html" target="_blank">
-                                <h3 class="px-3 text-2xl text-center text-cyan-900 mt-5 truncate">3-column preview card</h3>
-                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/3column/3column.png" alt="3-column preview card component">
-                            </a>
+                        <div 
+                        class="col-start-2 col-span-7 flex justify-around mt-4">
+                            <!-- chat  -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- retweet    -->
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- like    -->
+                            <button 
+                            x-data ="{liked : false, likedCount: 4}" 
+                            @click ="liked = !liked; likedCount += (liked ? 1 : -1)" 
+                            class="flex">
+                                <svg :class="liked ? 'text-red-700' : '' " 
+                                :fill ="liked ? 'currentColor' : 'none' "
+                                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                  </svg>
+                                  <span x-text="likedCount" class="ml-4"></span>
+                            </button>
+                            
+                            <!-- upload    -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                                  </svg>
+                            </button>
                         </div>
-                    </li>
-                    <li class="relative">
-                        <div class="card">
-                            <a href="./statsPreview.html" target="_blank">
-                                <h3 class="px-3 truncate text-2xl text-center text-cyan-900 mt-5">Stats preview card component</h3>
-                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/stats/stats.png" alt="Stats preview card component">
-                            </a>
+                    </div>
+                    <!-- order summary  -->
+                    <div class="grid grid-cols-8 hover:bg-gray-50 py-3 pr-10 mx-auto">
+                        <div class="col-span-1 place-self-center ml-2">
+                            <a href="https://www.frontendmentor.io/profile/cssbubble" target="_blank" class="text-gray-500">
+                                <img src="../images/ordersummary/ordersummary.png" alt="front end mentor logo" class="w-16 h-auto">
+                            </a>    
                         </div>
-                    </li>
-                    <li class="relative">
-                        <div class="card">
+                        <div class="col-span-7 ml-2">
+                            <a href="https://www.frontendmentor.io/home" target="_blank" class="flex ">
+                                <h3 class="font-semibold hover:underline">Order Summary </h3>
+                                <span class="text-gray-500 ml-2">@frontendmentor</span> 
+                            </a>
+                            
+                            <p></p>
+                        </div>
+                        
+                        <div class="col-start-2 col-span-7 ml-2 mt-4 rounded-xl overflow-hidden">
                             <a href="./orderSummary.html" target="_blank">
-                                <h3 class="px-3 truncate text-2xl text-center text-cyan-900 mt-5">Order summary component</h3>
-                                <img class="object-cover mt-10 h-60 w-60 mx-auto" src="../images/ordersummary/ordersummary.png" alt="Order summary component">
+                                <img src="../images/ordersummary/ordersummary.png" alt="E-commercePage">
                             </a>
                         </div>
-                    </li>
-                </ul>
+                        <div 
+                        class="col-start-2 col-span-7 flex justify-around mt-4">
+                            <!-- chat  -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- retweet    -->
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- like    -->
+                            <button 
+                            x-data ="{liked : false, likedCount: 4}" 
+                            @click ="liked = !liked; likedCount += (liked ? 1 : -1)" 
+                            class="flex">
+                                <svg :class="liked ? 'text-red-700' : '' " 
+                                :fill ="liked ? 'currentColor' : 'none' "
+                                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                  </svg>
+                                  <span x-text="likedCount" class="ml-4"></span>
+                            </button>
+                            
+                            <!-- upload    -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                                  </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 3 column preview  -->
+                    <div class="grid grid-cols-8 hover:bg-gray-50 py-3 pr-10 mx-auto">
+                        <div class="col-span-1 place-self-center ml-2">
+                            <a href="https://www.frontendmentor.io/profile/cssbubble" target="_blank" class="text-gray-500">
+                                <img src="../images/3column/3column.png" alt="front end mentor logo" class="w-16 h-auto">
+                            </a>    
+                        </div>
+                        <div class="col-span-7 ml-2">
+                            <a href="https://www.frontendmentor.io/home" target="_blank" class="flex ">
+                                <h3 class="font-semibold hover:underline">3 Column Preview </h3>
+                                <span class="text-gray-500 ml-2">@frontendmentor</span> 
+                            </a>
+                            
+                            <p></p>
+                        </div>
+                        
+                        <div class="col-start-2 col-span-7 ml-2 mt-4 rounded-xl overflow-hidden">
+                            <a href="./3ColumnPreview.html" target="_blank">
+                                <img src="../images/3column/3column.png" alt="E-commercePage">
+                            </a>
+                        </div>
+                        <div 
+                        class="col-start-2 col-span-7 flex justify-around mt-4">
+                            <!-- chat  -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- retweet    -->
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- like    -->
+                            <button 
+                            x-data ="{liked : false, likedCount: 4}" 
+                            @click ="liked = !liked; likedCount += (liked ? 1 : -1)" 
+                            class="flex">
+                                <svg :class="liked ? 'text-red-700' : '' " 
+                                :fill ="liked ? 'currentColor' : 'none' "
+                                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                  </svg>
+                                  <span x-text="likedCount" class="ml-4"></span>
+                            </button>
+                            
+                            <!-- upload    -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                                  </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 4 card feature  -->
+                    <div class="grid grid-cols-8 hover:bg-gray-50 py-3 pr-10 mx-auto">
+                        <div class="col-span-1 place-self-center ml-2">
+                            <a href="https://www.frontendmentor.io/profile/cssbubble" target="_blank" class="text-gray-500">
+                                <img src="../images/4cards/4cards.png" alt="front end mentor logo" class="w-16 h-auto">
+                            </a>    
+                        </div>
+                        <div class="col-span-7 ml-2">
+                            <a href="https://www.frontendmentor.io/home" target="_blank" class="flex ">
+                                <h3 class="font-semibold hover:underline">4 Card features </h3>
+                                <span class="text-gray-500 ml-2">@frontendmentor</span> 
+                            </a>
+                            
+                            <p></p>
+                        </div>
+                        
+                        <div class="col-start-2 col-span-7 ml-2 mt-4 rounded-xl overflow-hidden">
+                            <a href="./fourCardFeature.html" target="_blank">
+                                <img src="../images/4cards/4cards.png" alt="E-commercePage">
+                            </a>
+                        </div>
+                        <div 
+                        class="col-start-2 col-span-7 flex justify-around mt-4">
+                            <!-- chat  -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- retweet    -->
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- like    -->
+                            <button 
+                            x-data ="{liked : false, likedCount: 4}" 
+                            @click ="liked = !liked; likedCount += (liked ? 1 : -1)" 
+                            class="flex">
+                                <svg :class="liked ? 'text-red-700' : '' " 
+                                :fill ="liked ? 'currentColor' : 'none' "
+                                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                  </svg>
+                                  <span x-text="likedCount" class="ml-4"></span>
+                            </button>
+                            
+                            <!-- upload    -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                                  </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- huddle  -->
+                    <div class="grid grid-cols-8 hover:bg-gray-50 py-3 pr-10 mx-auto">
+                        <div class="col-span-1 place-self-center ml-2">
+                            <a href="https://www.frontendmentor.io/profile/cssbubble" target="_blank" class="text-gray-500">
+                                <img src="../images/huddle/huddle.png" alt="front end mentor logo" class="w-16 h-auto">
+                            </a>    
+                        </div>
+                        <div class="col-span-7 ml-2">
+                            <a href="https://www.frontendmentor.io/home" target="_blank" class="flex ">
+                                <h3 class="font-semibold hover:underline">Huddle landing page </h3>
+                                <span class="text-gray-500 ml-2">@frontendmentor</span> 
+                            </a>
+                            
+                            <p></p>
+                        </div>
+                        
+                        <div class="col-start-2 col-span-7 ml-2 mt-4 rounded-xl overflow-hidden">
+                            <a href="./huddle.html" target="_blank">
+                                <img src="../images/huddle/huddle.png" alt="E-commercePage">
+                            </a>
+                        </div>
+                        <div 
+                        class="col-start-2 col-span-7 flex justify-around mt-4">
+                            <!-- chat  -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- retweet    -->
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- like    -->
+                            <button 
+                            x-data ="{liked : false, likedCount: 4}" 
+                            @click ="liked = !liked; likedCount += (liked ? 1 : -1)" 
+                            class="flex">
+                                <svg :class="liked ? 'text-red-700' : '' " 
+                                :fill ="liked ? 'currentColor' : 'none' "
+                                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                  </svg>
+                                  <span x-text="likedCount" class="ml-4"></span>
+                            </button>
+                            
+                            <!-- upload    -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                                  </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- nft preview  -->
+                    <div class="grid grid-cols-8 hover:bg-gray-50 py-3 pr-10 mx-auto">
+                        <div class="col-span-1 place-self-center ml-2">
+                            <a href="https://www.frontendmentor.io/profile/cssbubble" target="_blank" class="text-gray-500">
+                                <img src="../images/nft/nft.png" alt="nft logo" class="w-16 h-auto">
+                            </a>    
+                        </div>
+                        <div class="col-span-7 ml-2">
+                            <a href="https://www.frontendmentor.io/home" target="_blank" class="flex ">
+                                <h3 class="font-semibold hover:underline">NFT preview </h3>
+                                <span class="text-gray-500 ml-2">@frontendmentor</span> 
+                            </a>
+                            
+                            <p></p>
+                        </div>
+                        
+                        <div class="col-start-2 col-span-7 ml-2 mt-4 rounded-xl overflow-hidden">
+                            <a href="./nftPreview.html" target="_blank">
+                                <img src="../images/nft/nft.png" alt="E-commercePage">
+                            </a>
+                        </div>
+                        <div 
+                        class="col-start-2 col-span-7 flex justify-around mt-4">
+                            <!-- chat  -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- retweet    -->
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- like    -->
+                            <button 
+                            x-data ="{liked : false, likedCount: 4}" 
+                            @click ="liked = !liked; likedCount += (liked ? 1 : -1)" 
+                            class="flex">
+                                <svg :class="liked ? 'text-red-700' : '' " 
+                                :fill ="liked ? 'currentColor' : 'none' "
+                                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                  </svg>
+                                  <span x-text="likedCount" class="ml-4"></span>
+                            </button>
+                            
+                            <!-- upload    -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                                  </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- ping coming soon  -->
+                    <div class="grid grid-cols-8 hover:bg-gray-50 py-3 pr-10 mx-auto">
+                        <div class="col-span-1 place-self-center ml-2">
+                            <a href="https://www.frontendmentor.io/profile/cssbubble" target="_blank" class="text-gray-500">
+                                <img src="../images/ping/ping.png" alt="ping logo" class="w-16 h-auto">
+                            </a>    
+                        </div>
+                        <div class="col-span-7 ml-2">
+                            <a href="https://www.frontendmentor.io/home" target="_blank" class="flex ">
+                                <h3 class="font-semibold hover:underline">Ping coming soon Page </h3>
+                                <span class="text-gray-500 ml-2">@frontendmentor</span> 
+                            </a>
+                            
+                            <p> </p>
+                        </div>
+                        
+                        <div class="col-start-2 col-span-7 ml-2 mt-4 rounded-xl overflow-hidden">
+                            <a href="./ping-coming-soon.html" target="_blank">
+                                <img src="../images/ping/ping.png" alt="ping page">
+                            </a>
+                        </div>
+                        <div 
+                        class="col-start-2 col-span-7 flex justify-around mt-4">
+                            <!-- chat  -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- retweet    -->
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- like    -->
+                            <button 
+                            x-data ="{liked : false, likedCount: 4}" 
+                            @click ="liked = !liked; likedCount += (liked ? 1 : -1)" 
+                            class="flex">
+                                <svg :class="liked ? 'text-red-700' : '' " 
+                                :fill ="liked ? 'currentColor' : 'none' "
+                                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                  </svg>
+                                  <span x-text="likedCount" class="ml-4"></span>
+                            </button>
+                            
+                            <!-- upload    -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                                  </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- tip calculator  -->
+                    <div class="grid grid-cols-8 hover:bg-gray-50 py-3 pr-10 mx-auto">
+                        <div class="col-span-1 place-self-center ml-2">
+                            <a href="https://www.frontendmentor.io/profile/cssbubble" target="_blank" class="text-gray-500">
+                                <img src="../images/splitter/splitter.png" alt="tip calculator logo" class="w-16 h-auto">
+                            </a>    
+                        </div>
+                        <div class="col-span-7 ml-2">
+                            <a href="https://www.frontendmentor.io/home" target="_blank" class="flex ">
+                                <h3 class="font-semibold hover:underline">Tip calculator </h3>
+                                <span class="text-gray-500 ml-2">@frontendmentor</span> 
+                            </a>
+                            
+                            <p> </p>
+                        </div>
+                        
+                        <div class="col-start-2 col-span-7 ml-2 mt-4 rounded-xl overflow-hidden">
+                            <a href="./tipCalculator.html" target="_blank">
+                                <img src="../images/splitter/splitter.png" alt="tip calculator">
+                            </a>
+                        </div>
+                        <div 
+                        class="col-start-2 col-span-7 flex justify-around mt-4">
+                            <!-- chat  -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- retweet    -->
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- like    -->
+                            <button 
+                            x-data ="{liked : false, likedCount: 4}" 
+                            @click ="liked = !liked; likedCount += (liked ? 1 : -1)" 
+                            class="flex">
+                                <svg :class="liked ? 'text-red-700' : '' " 
+                                :fill ="liked ? 'currentColor' : 'none' "
+                                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                  </svg>
+                                  <span x-text="likedCount" class="ml-4"></span>
+                            </button>
+                            
+                            <!-- upload    -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                                  </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- sunnyside landing page  -->
+                    <div class="grid grid-cols-8 hover:bg-gray-50 py-3 pr-10 mx-auto">
+                        <div class="col-span-1 place-self-center ml-2">
+                            <a href="https://www.frontendmentor.io/profile/cssbubble" target="_blank" class="text-gray-500">
+                                <img src="../images/sunnyside/sunnyside.png" alt="sunnyside logo" class="w-16 h-auto">
+                            </a>    
+                        </div>
+                        <div class="col-span-7 ml-2">
+                            <a href="https://www.frontendmentor.io/home" target="_blank" class="flex ">
+                                <h3 class="font-semibold hover:underline">Sunnyside landing Page </h3>
+                                <span class="text-gray-500 ml-2">@frontendmentor</span> 
+                            </a>
+                            
+                            <p></p>
+                        </div>
+                        
+                        <div class="col-start-2 col-span-7 ml-2 mt-4 rounded-xl overflow-hidden">
+                            <a href="./sunnySide.html" target="_blank">
+                                <img src="../images/sunnyside/sunnyside.png" alt="sunnyside landing page">
+                            </a>
+                        </div>
+                        <div 
+                        class="col-start-2 col-span-7 flex justify-around mt-4">
+                            <!-- chat  -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- retweet    -->
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- like    -->
+                            <button 
+                            x-data ="{liked : false, likedCount: 4}" 
+                            @click ="liked = !liked; likedCount += (liked ? 1 : -1)" 
+                            class="flex">
+                                <svg :class="liked ? 'text-red-700' : '' " 
+                                :fill ="liked ? 'currentColor' : 'none' "
+                                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                  </svg>
+                                  <span x-text="likedCount" class="ml-4"></span>
+                            </button>
+                            
+                            <!-- upload    -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                                  </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                     <!-- profile-card-component  -->
+                     <div class="grid grid-cols-8 hover:bg-gray-50 py-3 pr-10 mx-auto">
+                        <div class="col-span-1 place-self-center ml-2">
+                            <a href="https://www.frontendmentor.io/profile/cssbubble" target="_blank" class="text-gray-500">
+                                <img src="../images/profileCardComponent/profile-card-component.png" alt="profile card component logo" class="w-16 h-auto">
+                            </a>    
+                        </div>
+                        <div class="col-span-7 ml-2">
+                            <a href="https://www.frontendmentor.io/home" target="_blank" class="flex ">
+                                <h3 class="font-semibold hover:underline">Profile Card Component </h3>
+                                <span class="text-gray-500 ml-2">@frontendmentor</span> 
+                            </a>
+                            
+                            <p></p>
+                        </div>
+                        
+                        <div class="col-start-2 col-span-7 ml-2 mt-4 rounded-xl overflow-hidden">
+                            <a href="./sunnySide.html" target="_blank">
+                                <img src="../images/profileCardComponent/profile-card-component.png" alt="profile card component">
+                            </a>
+                        </div>
+                        <div 
+                        class="col-start-2 col-span-7 flex justify-around mt-4">
+                            <!-- chat  -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- retweet    -->
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- like    -->
+                            <button 
+                            x-data ="{liked : false, likedCount: 4}" 
+                            @click ="liked = !liked; likedCount += (liked ? 1 : -1)" 
+                            class="flex">
+                                <svg :class="liked ? 'text-red-700' : '' " 
+                                :fill ="liked ? 'currentColor' : 'none' "
+                                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                  </svg>
+                                  <span x-text="likedCount" class="ml-4"></span>
+                            </button>
+                            
+                            <!-- upload    -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                                  </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- single page price grid  -->
+                    <div class="grid grid-cols-8 hover:bg-gray-50 py-3 pr-10 mx-auto">
+                        <div class="col-span-1 place-self-center ml-2">
+                            <a href="https://www.frontendmentor.io/profile/cssbubble" target="_blank" class="text-gray-500">
+                                <img src="../images/singlePageComponent/single-page-price-component.png" alt="single page price grid logo" class="w-16 h-auto">
+                            </a>    
+                        </div>
+                        <div class="col-span-7 ml-2">
+                            <a href="https://www.frontendmentor.io/home" target="_blank" class="flex ">
+                                <h3 class="font-semibold hover:underline">Single page price component </h3>
+                                <span class="text-gray-500 ml-2">@frontendmentor</span> 
+                            </a>
+                            
+                            <p></p>
+                        </div>
+                        
+                        <div class="col-start-2 col-span-7 ml-2 mt-4 rounded-xl overflow-hidden">
+                            <a href="./single-price-grid.html" target="_blank">
+                                <img src="../images/singlePageComponent/single-page-price-component.png" alt="Single page price grid">
+                            </a>
+                        </div>
+                        <div 
+                        class="col-start-2 col-span-7 flex justify-around mt-4">
+                            <!-- chat  -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- retweet    -->
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- like    -->
+                            <button 
+                            x-data ="{liked : false, likedCount: 4}" 
+                            @click ="liked = !liked; likedCount += (liked ? 1 : -1)" 
+                            class="flex">
+                                <svg :class="liked ? 'text-red-700' : '' " 
+                                :fill ="liked ? 'currentColor' : 'none' "
+                                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                  </svg>
+                                  <span x-text="likedCount" class="ml-4"></span>
+                            </button>
+                            
+                            <!-- upload    -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                                  </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- social proof  -->
+                    <div class="grid grid-cols-8 hover:bg-gray-50 py-3 pr-10 mx-auto">
+                        <div class="col-span-1 place-self-center ml-2">
+                            <a href="https://www.frontendmentor.io/profile/cssbubble" target="_blank" class="text-gray-500">
+                                <img src="../images/socialProof/socialproof.png" alt="social proof logo" class="w-16 h-auto">
+                            </a>    
+                        </div>
+                        <div class="col-span-7 ml-2">
+                            <a href="https://www.frontendmentor.io/home" target="_blank" class="flex ">
+                                <h3 class="font-semibold hover:underline">Social Proof </h3>
+                                <span class="text-gray-500 ml-2">@frontendmentor</span> 
+                            </a>
+                            
+                            <p></p>
+                        </div>
+                        
+                        <div class="col-start-2 col-span-7 ml-2 mt-4 rounded-xl overflow-hidden">
+                            <a href="./socialProof.html" target="_blank">
+                                <img src="../images/socialProof/socialproof.png" alt="Social proof">
+                            </a>
+                        </div>
+                        <div 
+                        class="col-start-2 col-span-7 flex justify-around mt-4">
+                            <!-- chat  -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- retweet    -->
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- like    -->
+                            <button 
+                            x-data ="{liked : false, likedCount: 4}" 
+                            @click ="liked = !liked; likedCount += (liked ? 1 : -1)" 
+                            class="flex">
+                                <svg :class="liked ? 'text-red-700' : '' " 
+                                :fill ="liked ? 'currentColor' : 'none' "
+                                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                  </svg>
+                                  <span x-text="likedCount" class="ml-4"></span>
+                            </button>
+                            
+                            <!-- upload    -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                                  </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- stats preview  -->
+                    <div class="grid grid-cols-8 hover:bg-gray-50 py-3 pr-10 mx-auto">
+                        <div class="col-span-1 place-self-center ml-2">
+                            <a href="https://www.frontendmentor.io/profile/cssbubble" target="_blank" class="text-gray-500">
+                                <img src="../images/stats/stats.png" alt="stats preview logo" class="w-16 h-auto">
+                            </a>    
+                        </div>
+                        <div class="col-span-7 ml-2">
+                            <a href="https://www.frontendmentor.io/home" target="_blank" class="flex ">
+                                <h3 class="font-semibold hover:underline">Stats Preview </h3>
+                                <span class="text-gray-500 ml-2">@frontendmentor</span> 
+                            </a>
+                            
+                            <p></p>
+                        </div>
+                        
+                        <div class="col-start-2 col-span-7 ml-2 mt-4 rounded-xl overflow-hidden">
+                            <a href="./socialProof.html" target="_blank">
+                                <img src="../images/stats/stats.png" alt="Stats preview ">
+                            </a>
+                        </div>
+                        <div 
+                        class="col-start-2 col-span-7 flex justify-around mt-4">
+                            <!-- chat  -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- retweet    -->
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                  </svg>
+                            </button>
+                            
+                            <!-- like    -->
+                            <button 
+                            x-data ="{liked : false, likedCount: 4}" 
+                            @click ="liked = !liked; likedCount += (liked ? 1 : -1)" 
+                            class="flex">
+                                <svg :class="liked ? 'text-red-700' : '' " 
+                                :fill ="liked ? 'currentColor' : 'none' "
+                                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                  </svg>
+                                  <span x-text="likedCount" class="ml-4"></span>
+                            </button>
+                            
+                            <!-- upload    -->
+                            <button >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                                  </svg>
+                            </button>
+                        </div>
+                    </div>
+                </section>
             </section>
-        </div> -->
-    <!-- </div>   -->
+        </main>
+        <aside class="hidden lg:block lg:w-60 lg:absolute lg:inset-y-0 lg:right-0">
+            <div class="w-full mt-2 px-4">
+                <input type="text" placeholder="search" class="bg-gray-100 rounded-full w-full py-3 px-5">
+            </div>
+            <section class="bg-gray-100 mt-3 mx-3 rounded-lg p-3 text-sm font-bold">
+                <h2 class="text-base">What's happening?</h2>
+                <div class="mt-3 flex flex-col gap-5">
+                    <div class="flex justify-between items-center gap-3">
+                        <p>Rapidly build modern websites without ever leaving your HTML. </p>
+                        <img src="../images/tailwindcss.svg" alt="tailwind css logo" class="w-12 h-auto rounded-lg ">
+                    </div>
+                    <div class="flex justify-between items-center gap-3">
+                        <p>Alpine is a rugged, minimal tool for composing behavior directly in your markup.  </p>
+                        <img src="https://avatars.githubusercontent.com/u/59030169?s=200&v=4" alt="tailwind css logo" class="w-12 h-auto rounded-lg ">
+                    </div>
+                    <div class="flex justify-between items-center gap-3">
+                        <p>My github profile  </p>
+                        <a href="https://github.com/cssbubble" target="_blank"><img src="../images/github-brands.svg" alt="tailwind css logo" class="w-12 h-auto rounded-lg "></a>
+                    </div>
+                </div>
+                
+            </section>
+        </aside>
+    </div>
 </body>
 </html>
