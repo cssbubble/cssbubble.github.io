@@ -1575,6 +1575,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-position: right top;
 }
 
+.bg-center {
+  background-position: center;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
