@@ -27,8 +27,9 @@
                     <span class="hidden lg:inline-block lg:ml-3 font-light focus:font-bold text-lg">Home</span>
                 </a>
                 <!-- freecodecamp  -->
-                <a href="https://www.freecodecamp.org/cssbubble" class="p-3 rounded-full hover:bg-gray-50 sm:flex items-center justify-center sm:justify-end lg:justify-start lg:w-full">
+                <a href="https://www.freecodecamp.org/cssbubble" class="p-3 rounded-full hover:bg-gray-50 sm:flex items-center justify-center sm:justify-end lg:justify-start lg:w-full relative">
                     <img src="./images/free-code-camp-brands.svg" alt="free code camp logo" class="h-8 w-8">
+                    <span class="absolute hidden hover:visible w-20 bg-gray-100 text-center border shadow-md p-3">freeCodeCamp profile</span>
                     <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                       </svg> -->
@@ -84,23 +85,18 @@
                     <a href="mailto:cssbubble@gmail.com" class="p-3 rounded-full hover:bg-gray-50 sm:flex sm:items-center sm:justify-end lg:justify-start lg:hidden">
                         <img src="./images/pen.svg" alt="" class="w-8 h-8 rounded-full lg:hidden">
                     </a>    
-                    <button class="text-white bg-sky-500 rounded-full hidden lg:inline-block py-3 font-bold px-10 w-full"><a href="mailto:cssbubble@gmail.com">Hire me</a>
-                    </button>
+                    <form class="w-full" action="mailto:cssbubble@gmail.com">
+                        <button class="text-white bg-sky-500 rounded-full hidden lg:inline-block py-3 font-bold px-10 w-full">Hire me</button>
+                    </form>
+                    
                 </div>
                 
-                <!-- tweet  -->
-                <!-- <div class="sm:flex sm:justify-end lg:justify-center w-full">
-                    <a href="mailto:cssbubble@gmail.com" class="p-3 rounded-full hover:bg-gray-50 lg:hidden">
-                        <img src="./images/pen.svg" alt="" class="w-8 h-8 rounded-full ">
-                    </a>
-                    <button class="text-white bg-sky-500 rounded-full hidden lg:inline-block py-3 font-bold px-10 mr-5"><a href="mailto:cssbubble@gmail.com">Hire me</a> </button>
-                </div>  -->
             </div>    
         </aside>
         <main class="ml-20 lg:ml-56 w-full lg:mr-60 border-x border-gray-200">
             <header>
                 <div class="flex justify-between items-center p-3 ">
-                    <h1 class="text-xl font-semibold">Home</h1>
+                    <!-- <h1 class="text-xl font-semibold">Home</h1> -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                       </svg>
@@ -108,53 +104,61 @@
                 <div x-data = "{ focused: false}" 
                     class="grid grid-cols-8 gap-4 p-3">
                     
-                    <img src="./images/me2.jpg" alt="priyanka's profile picture" class="w-12 h-12 rounded-full object-cover col-span-1">
+                    <img src="./images/me2.jpg" alt="priyanka's profile picture" class="w-12 h-12 rounded-full object-cover col-span-2 sm:col-span-1">
                     
                     <!-- tweet input, span, icons and cta button  -->
-                    <div class="col-span-7 mt-3">
-                        <input 
+                    <div class="col-start-3 col-span-6 sm:col-start-2 sm:col-span-7 flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                        
+                        <div class="">
+                            <h2 class="text-2xl font-semibold">Priyanka</h2>
+                            <p class="text-sm font-mono">Frontend Developer</p>
+                        </div>
+                        
+                        <!-- <input 
                         type="text" 
                         placeholder="What's happening?" 
                         @click = "focused = true"
                         class="text-xl placeholder:text-gray-600 tracking-wide focus:outline-none">
                         <div  
                         x-show = "focused"
-                        class="flex flex-col mt-2">    
-                            <p class="flex mb-3 ">
+                        class="flex flex-col mt-2">     -->
+                            <!-- <p class="flex mb-3 ">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
                                 <span class="text-sky-500 text-sm font-bold ml-1">Everyone can reply</span>
-                            </p>
-                            <hr>
-                        </div>
+                            </p> -->
+                            <!-- <hr>
+                        </div> -->
                         
                         <!-- icons and tweet button  -->
                         <div class="flex justify-between items-center mt-3">
-                            <div class="flex justify-start gap-3">
+                            <!-- <div class="flex justify-start gap-3"> -->
                                 <!-- image svg  -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                  </svg>
+                                  </svg> -->
                                 <!-- graph   -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                                  </svg>
+                                  </svg> -->
                                 <!-- smile    -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                  </svg>
+                                  </svg> -->
                                 <!-- schedule    -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                  </svg>
+                                  </svg> -->
                                 <!-- map    -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                  </svg>
-                            </div>
-                            <button class="bg-sky-500 py-2 px-4 font-semibold text-white rounded-full"><a href="mailto:cssbubble@gmail.com">Hire me</a></button>
+                                  </svg> -->
+                            <!-- </div> -->
+                            <form class="w-full" action="mailto:cssbubble@gmail.com">
+                                <button class="text-white bg-sky-500 rounded-full hidden lg:inline-block py-2 font-bold px-10 w-full">Hire me</button>
+                            </form>
                         </div>   
                     </div>
                 </div>
@@ -175,23 +179,23 @@
                 <!-- challenges and activities  -->
                 <section x-show = "open" class="grid -mt-6">
                     <!-- learnawesome  -->
-                    <div class="grid grid-cols-8 hover:bg-gray-50 py-3 pr-10 mx-auto">
-                        <div class="col-span-1 place-self-center ml-2">
+                    <div class="grid grid-cols-8 hover:bg-gray-50 py-3 pr-3 sm:pr-10 mx-auto">
+                        <div class="col-span-2 sm:col-span-1 place-self-start sm:place-self-center ml-2 bg-orange-100">
                             <a href="https://learnawesome.org/" target="_blank" class="text-gray-500">
                                 <img src="./images/learnawesome.png" alt="learn awesome logo" class="w-20 h-auto">
                             </a>
                             
                         </div>
-                        <div class="col-span-7 ml-2">
-                            <a href="https://learnawesome.org/" target="_blank" class="flex ">
-                                <h3 class="font-semibold hover:underline">Learn Awesome</h3>
-                                <span class="text-gray-500 ml-2">@Learn_Awesome</span> 
+                        <div class="col-start-3 sm:col-start-2 col-span-6 sm:col-span-7 ml-2 ">
+                            <a href="https://learnawesome.org/" target="_blank" class="flex flex-col sm:flex-row sm:justify-start sm:items-center">
+                                <h3 class="font-semibold hover:underline text-sm sm:text-base">Learn Awesome</h3>
+                                <span class="text-gray-500 sm:ml-2 text-xs sm:text-base">@Learn_Awesome</span> 
                             </a>
                             
-                            <p>I contriubuted in this awesome open source project by fixing some UI and UX design. You can find many learning resourced here for free. </p>
+                            <p class="mt-3 sm:mt-0 text-xs sm:text-base">I contriubuted in this awesome open source project by fixing some UI and UX design. You can find many learning resources here for free. </p>
                         </div>
                         
-                        <div class="col-start-2 col-span-7 ml-2 mt-4 rounded-xl overflow-hidden">
+                        <div class="col-start-3 sm:col-start-2 col-span-6 sm:col-span-7 ml-2 mt-4 rounded-xl overflow-hidden">
                             <a href="https://learnawesome.org/" target="_blank">
                                 <img src="https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGVhcm5pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" alt="A learner learning on a computer">
                             </a>    
@@ -199,18 +203,18 @@
                         <div
                         class="col-start-2 col-span-7 flex justify-around mt-4">
                             <!-- chat  -->
-                            <button >
+                            <!-- <button >
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                                   </svg>
-                            </button>
+                            </button> -->
                             
                             <!-- retweet    -->
-                            <button>
+                            <!-- <button>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                                   </svg>
-                            </button>
+                            </button> -->
                             
                             <!-- like    -->
                             <button 
@@ -226,11 +230,11 @@
                             </button>
                             
                             <!-- upload    -->
-                            <button >
+                            <!-- <button >
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
                                   </svg>
-                            </button>      
+                            </button>       -->
                         </div>
                     </div>
 
@@ -261,18 +265,18 @@
                         <div
                         class="col-start-2 col-span-7 flex justify-around mt-4">
                             <!-- chat  -->
-                            <button >
+                            <!-- <button >
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                                   </svg>
-                            </button>
+                            </button> -->
                             
                             <!-- retweet    -->
-                            <button>
+                            <!-- <button>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                                   </svg>
-                            </button>
+                            </button> -->
                             
                             <!-- like    -->
                             <button 
@@ -288,11 +292,11 @@
                             </button>
                             
                             <!-- upload    -->
-                            <button >
+                            <!-- <button >
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
                                   </svg>
-                            </button>      
+                            </button>       -->
                         </div>
                     </div>
 
@@ -1264,7 +1268,7 @@
                 <input type="text" placeholder="search" class="bg-gray-100 rounded-full w-full py-3 px-5">
             </div>
             <section class="bg-gray-100 mt-3 mx-3 rounded-lg p-3 text-sm ">
-                <h2 class="text-base font-bold">What's happening?</h2>
+                <h2 class="text-base font-bold">Resources I am using...</h2>
                 <div class="mt-3 flex flex-col gap-5">
                     <div class="flex justify-between items-center gap-3">
                         <p>Rapidly build modern websites without ever leaving your HTML. </p>
