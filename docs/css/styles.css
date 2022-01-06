@@ -3180,6 +3180,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     white-space: normal;
   }
 
+  .lg\:visible {
+    visibility: visible;
+  }
+
   .lg\:absolute {
     position: absolute;
   }
