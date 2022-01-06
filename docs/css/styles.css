@@ -806,6 +806,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2.25rem;
 }
 
+.mt-32 {
+  margin-top: 8rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -896,6 +900,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-16 {
   height: 4rem;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-2\/4 {
+  height: 50%;
 }
 
 .min-h-screen {
@@ -3232,6 +3244,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:ml-56 {
     margin-left: 14rem;
+  }
+
+  .lg\:mt-36 {
+    margin-top: 9rem;
   }
 
   .lg\:block {
