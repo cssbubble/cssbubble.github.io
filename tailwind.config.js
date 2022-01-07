@@ -14,6 +14,8 @@ module.exports = {
         'sppg-brightYellow': 'hsl(71, 73%, 54%)',
         'sppg-lightGray': 'hsl(204, 43%, 93%)',
         'sppg-grayishBlue': 'hsl(218, 22%, 67%)',
+
+        'pcc-bg-color': 'hsl(185, 75%, 39%)',
       },
       maxWidth: {
           's' : '375px',
