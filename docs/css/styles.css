@@ -1353,6 +1353,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: hsl(289 100% 72% / var(--tw-border-opacity));
 }
 
+.border-4c-custom-cyan {
+  --tw-border-opacity: 1;
+  border-color: hsl(180 62% 55% / var(--tw-border-opacity));
+}
+
+.border-4c-custom-red {
+  --tw-border-opacity: 1;
+  border-color: hsl(0 78% 62% / var(--tw-border-opacity));
+}
+
+.border-4c-custom-orange {
+  --tw-border-opacity: 1;
+  border-color: hsl(34 97% 64% / var(--tw-border-opacity));
+}
+
+.border-4c-custom-blue {
+  --tw-border-opacity: 1;
+  border-color: hsl(212 86% 64% / var(--tw-border-opacity));
+}
+
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));

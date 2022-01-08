@@ -45,8 +45,11 @@ module.exports = {
             'tg-darkGrayBlue': 'hsl(217, 19%, 35%)',
             'tg-darkBlackBlue': 'hsl(219, 29%, 14%)',
             'tg-lightGray': 'hsl(0, 0%, 81%)',
-            'tg-lightGrayBlue': 'hsl(210, 46%, 95%)'    
-            
+            'tg-lightGrayBlue': 'hsl(210, 46%, 95%)',    
+            '4c-custom-red': 'hsl(0, 78%, 62%)',
+            '4c-custom-cyan': 'hsl(180, 62%, 55%)',
+            '4c-custom-orange': 'hsl(34, 97%, 64%)',
+            '4c-custom-blue' : 'hsl(212, 86%, 64%)',    
       },
       maxWidth: {
           's' : '375px',
