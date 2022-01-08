@@ -1348,6 +1348,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-chat-vLightMagenta {
+  --tw-border-opacity: 1;
+  border-color: hsl(289 100% 72% / var(--tw-border-opacity));
+}
+
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
@@ -1398,6 +1403,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
+.bg-chat-lightGrayViolet {
+  --tw-bg-opacity: 1;
+  background-color: hsl(270 20% 96% / var(--tw-bg-opacity));
+}
+
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -1406,6 +1416,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-hd-violet {
+  --tw-bg-opacity: 1;
+  background-color: hsl(257 40% 49% / var(--tw-bg-opacity));
 }
 
 .bg-slate-700 {
@@ -1554,6 +1569,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
 
+.from-chat-lightMagenta {
+  --tw-gradient-from: hsl(293, 100%, 63%);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, hsl(293 100% 63% / 0));
+}
+
 .from-yellow-500 {
   --tw-gradient-from: #eab308;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(234 179 8 / 0));
@@ -1561,6 +1581,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .via-red-500 {
   --tw-gradient-stops: var(--tw-gradient-from), #ef4444, var(--tw-gradient-to, rgb(239 68 68 / 0));
+}
+
+.to-chat-lightViolet {
+  --tw-gradient-to: hsl(264, 100%, 61%);
 }
 
 .to-blue-500 {
@@ -1575,8 +1599,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-position: right top;
 }
 
+.bg-top {
+  background-position: top;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .object-cover {
@@ -1836,6 +1869,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1rem;
 }
 
+.text-chat-xxs {
+  font-size: 0.5rem;
+}
+
+.text-chat-small {
+  font-size: 0.60rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -1985,6 +2026,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-chat-paleViolet {
+  --tw-text-opacity: 1;
+  color: hsl(276 100% 81% / var(--tw-text-opacity));
+}
+
+.text-chat-lightGrayViolet {
+  --tw-text-opacity: 1;
+  color: hsl(270 20% 96% / var(--tw-text-opacity));
+}
+
+.text-chat-modViolet {
+  --tw-text-opacity: 1;
+  color: hsl(276 55% 52% / var(--tw-text-opacity));
+}
+
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -1993,6 +2049,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-100 {
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
+.text-chat-grayBlue {
+  --tw-text-opacity: 1;
+  color: hsl(206 6% 79% / var(--tw-text-opacity));
+}
+
+.text-chat-vDarkDsViolet {
+  --tw-text-opacity: 1;
+  color: hsl(271 36% 24% / var(--tw-text-opacity));
+}
+
+.text-chat-DarkGrayViolet {
+  --tw-text-opacity: 1;
+  color: hsl(270 7% 64% / var(--tw-text-opacity));
 }
 
 .text-gray-400 {
@@ -2013,6 +2084,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-hd-violet {
+  --tw-text-opacity: 1;
+  color: hsl(257 40% 49% / var(--tw-text-opacity));
 }
 
 .text-gray-900 {
@@ -2273,6 +2349,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-ring-offset-width: 2px;
 }
 
+.ring-offset-hd-violet {
+  --tw-ring-offset-color: hsl(257, 40%, 49%);
+}
+
 .filter {
   filter: var(--tw-filter);
 }
@@ -2351,6 +2431,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(251 146 60 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-hd-soft-magenta:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(300 69% 71% / var(--tw-bg-opacity));
+}
+
 .hover\:bg-gray-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
@@ -2409,6 +2494,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:ring-ec-customOrange:hover {
   --tw-ring-opacity: 1;
   --tw-ring-color: hsl(26 100% 55% / var(--tw-ring-opacity));
+}
+
+.hover\:ring-hd-soft-magenta:hover {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: hsl(300 69% 71% / var(--tw-ring-opacity));
 }
 
 .focus\:bg-yellow-500:focus {

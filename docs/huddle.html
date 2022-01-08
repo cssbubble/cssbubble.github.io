@@ -14,62 +14,49 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
-
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          backgroundImage: {
-            'mobileBg' : "url('/images/bg-mobile.svg')",
-            'desktopBg' : "url('/images/bg-desktop.svg')"
-          },
-          colors: {
-            'violet': 'hsl(257, 40%, 49%)',
-            'soft-magenta': 'hsl(300, 69%, 71%)'
-          },
-          'lineHeight': {
-            'extra-loose': '2.5',
-          }
-        }
-      }
-    }
-  </script>
 </head>
 <body>
-  <main class="flex justify-center items-center bg-violet w-full bg-mobileBg md:bg-desktopBg bg-no-repeat bg-contain" >
-    <div class="w-full min-h-screen px-16 py-12 flex-cols md:max-w-7xl mx-auto">
-      <img class="w-52" src="./images/huddle/logo.svg" alt="">
-      <div class="grid md:grid-cols-2 justify-center items-center ">
-        <img class="mt-28" src="./images/huddle/illustration-mockups.svg" alt="">
-
-        <div class="text-center tracking-widest text-white mt-24 md:text-left md:ml-10">
-          <h2 class="text-4xl font-semibold px-2 leading-normal">Build The Community Your Fans Will Love</h2>
-          <p class="text-2xl leading-normal mt-8 md:text-xl">Huddle re-imagines the way we build communities. You have a  voice, but so does you audience.
-          Create connections with your users as you engage in genuine discussion.
-          </p>
-          <button class="mt-10 bg-white text-xl text-violet px-32 py-5 rounded-full md:px-20 hover:bg-soft-magenta shadow-2xl shadow-black">Register
-          </button>
-        </div>
-      </div>
-      <div class="">
-        <div class="flex justify-center items-center mt-24 gap-6 md:justify-end">
-          
-          <button class="ring-2 ring-white ring-offset-4 ring-offset-violet rounded-full hover:bg-soft-magenta hover:ring-soft-magenta">
-            <img class="w-8 h-8 rounded-full" src="./images/huddle/facebook.svg" alt="">
-          </button>  
-
-          <button class="ring-2 ring-white ring-offset-4 ring-offset-violet rounded-full hover:bg-soft-magenta hover:ring-soft-magenta">
-            <img class="w-8 h-8 rounded-full" src="./images/huddle/twitter.svg" alt="">
-          </button>  
-
-          <button class="ring-2 ring-white ring-offset-4 ring-offset-violet rounded-full hover:bg-soft-magenta hover:ring-soft-magenta">
-            <img class="w-8 h-8 rounded-full" src="./images/huddle/instagram.svg" alt="">
-          </button>
-          
-        </div>
-      </div>
-      
+  <main class="relative">
+    <div role="img" class="absolute inset-x-0 md:hidden top-0">
+      <img src="./images/huddle/bg-mobile.svg" alt="mobile backgroundImage" class="w-full h-full object-contain">
     </div>
+
+    <div role="img" class="absolute inset-x-0 md:block hidden">
+      <img src="./images/huddle/bg-desktop.svg" alt="desktop backgroundImage" class="object-cover">
+    </div>
+
+    <div class=" flex justify-center items-center bg-hd-violet w-full" >
+      <div class="relative w-full min-h-screen px-16 py-8 flex-cols md:max-w-7xl mx-auto">
+        <img class="w-52" src="./images/huddle/logo.svg" alt="">
+        <h1 class="sr-only">huddle</h1>
+        <div class="grid md:grid-cols-2 justify-center items-center ">
+          <img class="mt-28" src="./images/huddle/illustration-mockups.svg" alt="">
+  
+          <div class="text-center tracking-wider text-white mt-24 md:text-left md:ml-10">
+            <h2 class="text-3xl font-semibold px-2">Build The Community Your Fans Will Love</h2>
+            <p class="text-lg leading-normal mt-8 md:text-xl px-5">Huddle re-imagines the way we build communities. You have a  voice, but so does you audience.
+            Create connections with your users as you engage in genuine discussion.
+            </p>
+            <button class="mt-10 bg-white text-xl text-hd-violet px-32 py-5 rounded-full md:px-20 hover:bg-hd-soft-magenta shadow-2xl shadow-black">Register
+            </button>
+          </div>
+        </div>
+        <div class="flex justify-center items-center mt-24 gap-6 md:justify-end">
+            
+            <button class="ring-2 ring-white ring-offset-4 ring-offset-hd-violet rounded-full hover:bg-hd-soft-magenta hover:ring-hd-soft-magenta">
+              <img class="w-8 h-8 rounded-full" src="./images/huddle/facebook.svg" alt="">
+            </button>  
+  
+            <button class="ring-2 ring-white ring-offset-4 ring-offset-hd-violet rounded-full hover:bg-hd-soft-magenta hover:ring-hd-soft-magenta">
+              <img class="w-8 h-8 rounded-full" src="./images/huddle/twitter.svg" alt="">
+            </button>  
+  
+            <button class="ring-2 ring-white ring-offset-4 ring-offset-hd-violet rounded-full hover:bg-hd-soft-magenta hover:ring-hd-soft-magenta">
+              <img class="w-8 h-8 rounded-full" src="./images/huddle/instagram.svg" alt="">
+            </button>    
+        </div> 
+      </div>
+    </div>  
   </main>
     
   <footer>
@@ -78,6 +65,6 @@
       Coded by <a href="https://www.frontendmentor.io/profile/cssbubble">Priyanka</a>.
     </p>
   </footer>
-  </div>
+  
 </body>
 </html>

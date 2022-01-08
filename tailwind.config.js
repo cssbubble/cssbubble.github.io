@@ -29,10 +29,26 @@ module.exports = {
             'png-lightRed': 'hsl(354, 100%, 66%)',
             'png-customGray': 'hsl(0, 0%, 59%)',
             'png-veryDarkBlue': 'hsl(209, 33%, 12%)',
+            'chat-paleViolet': 'hsl(276, 100%, 81%)',
+            'chat-modViolet': 'hsl(276, 55%, 52%)',
+            'chat-dsDarkViolet': 'hsl(271, 15%, 43%)',
+            'chat-grayBlue': 'hsl(206, 6%, 79%)',
+            'chat-vDarkDsViolet': 'hsl(271, 36%, 24%)',
+            'chat-DarkGrayViolet': 'hsl(270, 7%, 64%)',
+            'chat-lightMagenta': 'hsl(293, 100%, 63%)',
+            'chat-lightViolet': 'hsl(264, 100%, 61%)',
+            'chat-lightGrayViolet': 'hsl(270, 20%, 96%)',
+            'chat-vLightMagenta': 'hsl(289, 100%, 72%)',
+            'hd-violet': 'hsl(257, 40%, 49%)',
+            'hd-soft-magenta': 'hsl(300, 69%, 71%)'      
       },
       maxWidth: {
           's' : '375px',
-      }
+      },
+      fontSize: {
+        'chat-xxs' : '0.5rem',
+        'chat-small': '0.60rem',
+      },
     },
   },
   plugins: [
