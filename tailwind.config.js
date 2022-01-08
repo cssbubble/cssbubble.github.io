@@ -23,6 +23,12 @@ module.exports = {
           'ec-darkGrayishBlue': 'hsl(219, 9%, 45%)',
           'ec-grayishBlue': 'hsl(220, 14%, 75%)',
           'ec-lightGrayishBlue': 'hsl(223, 64%, 98%)',
+
+          'png-customBlue': 'hsl(223, 87%, 63%)',
+            'png-paleBlue': 'hsl(223, 100%, 88%)',
+            'png-lightRed': 'hsl(354, 100%, 66%)',
+            'png-customGray': 'hsl(0, 0%, 59%)',
+            'png-veryDarkBlue': 'hsl(209, 33%, 12%)',
       },
       maxWidth: {
           's' : '375px',
