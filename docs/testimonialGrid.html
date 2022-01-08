@@ -10,39 +10,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
-  <script type="tailwind-config">
-    {
-      theme: {
-        extend: {
-          colors: {
-            'mod-violet': 'hsl(263, 55%, 52%)',
-            'darkGrayBlue': 'hsl(217, 19%, 35%)',
-            'darkBlackBlue': 'hsl(219, 29%, 14%)',
-            'lightGray': 'hsl(0, 0%, 81%)',
-            'lightGrayBlue': 'hsl(210, 46%, 95%)'
-          }
-        }
-      }
-    }
-  </script>
+  <link rel="stylesheet" href="css/styles.css">
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body style="font-family: 'Barlow', sans-serif;">
-  <main class="grid place-items-center min-h-screen bg-lightGrayBlue">
+  <main class="grid place-items-center min-h-screen bg-tg-lightGrayBlue">
     <div class="grid max-w-sm mx-auto md:max-w-7xl grid-cols-1 md:grid-cols-4 md:grid-row-2 gap-6 px-4 py-10">
        
       <!-- card 1  -->
-      <div class="bg-mod-violet rounded-lg px-8 shadow-2xl md:col-start-1 md:col-span-2 text-white">
+      <div class="bg-tg-mod-violet rounded-lg px-8 shadow-2xl md:col-start-1 md:col-span-2 text-white">
         <div class="bg-no-repeat bg-right-top py-8"  style="background-image: url('./images/bg-pattern-quotation.svg');">
           <div class="flex justify-start items-center gap-5">
             <img class="w-8 rounded-full" src="./images/testimon/image-daniel.jpg" alt="Daniel Clifford">
             <div class="flex flex-col text-xs">
-              <h3 class="text-lightGray font-bold">Daniel Clifford</h3>
-              <p class="text-lightGray opacity-50">Verified Graduate</p>
+              <h3 class="text-tg-lightGray font-bold">Daniel Clifford</h3>
+              <p class="text-tg-lightGray opacity-50">Verified Graduate</p>
             </div>
           </div>
           <div>
@@ -50,7 +35,7 @@
               I received a job offer mid-course, and the subjects I learned were current, if not more so, 
               in the company I joined. I honestly feel I got every penny’s worth.
             </p>
-            <p class="mt-5 text-sm text-lightGray opacity-70">
+            <p class="mt-5 text-sm text-tg-lightGray opacity-70">
               “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
               transition and have heard some people who had an amazing experience here. I signed up 
               for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
@@ -64,19 +49,19 @@
       </div>
 
       <!-- card 2  -->
-      <div class="bg-darkGrayBlue rounded-lg p-8 shadow-2xl ">
+      <div class="bg-tg-darkGrayBlue rounded-lg p-8 shadow-2xl ">
         <div class="flex justify-start items-center gap-5">
           <img class="w-8 rounded-full" src="./images/testimon/image-jonathan.jpg" alt="Jonathan Walters">
           <div class="flex flex-col text-xs">
-            <h3 class="text-lightGray font-bold">Jonathan Walters</h3>
-            <p class="text-lightGray opacity-50">Verified Graduate</p>
+            <h3 class="text-tg-lightGray font-bold">Jonathan Walters</h3>
+            <p class="text-tg-lightGray opacity-50">Verified Graduate</p>
           </div>
         </div>
         <div>
           <p class="mt-5 text-lg font-bold text-white">
             The team was very supportive and kept me motivated
           </p>
-          <p class="mt-5 text-sm text-lightGray opacity-70">
+          <p class="mt-5 text-sm text-tg-lightGray opacity-70">
             “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
             for a big company. This was one of the best investments I’ve made in myself. ”
           </p>
@@ -88,15 +73,15 @@
         <div class="flex justify-start items-center gap-5">
           <img class="w-8 rounded-full" src="./images/testimon/image-jeanette.jpg" alt="Jeanette Harmon">
           <div class="flex flex-col text-xs">
-            <h3 class="text-darkGrayBlue font-bold">Jeanette Harmon</h3>
-            <p class="text-darkGrayBlue opacity-50">Verified Graduate</p>
+            <h3 class="text-tg-darkGrayBlue font-bold">Jeanette Harmon</h3>
+            <p class="text-tg-darkGrayBlue opacity-50">Verified Graduate</p>
           </div>
         </div>
         <div>
           <p class="mt-5 text-lg font-bold text-gray-700">
             An overall wonderful and rewarding experience
           </p>
-          <p class="mt-5 text-sm text-darkGrayBlue opacity-70">
+          <p class="mt-5 text-sm text-tg-darkGrayBlue opacity-70">
             “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
             while doing something I love. ”
           </p>
@@ -104,12 +89,12 @@
       </div>
 
       <!-- card 4  -->
-      <div class="bg-darkBlackBlue text-lightGrayBlue rounded-2xl p-8 shadow-xl md:col-start-2 md:col-span-2">
+      <div class="bg-tg-darkBlackBlue text-tg-lightGrayBlue rounded-2xl p-8 shadow-xl md:col-start-2 md:col-span-2">
         <div class="flex justify-start items-center gap-5">
           <img class="w-8 rounded-full" src="./images/testimon/image-patrick.jpg" alt="Patrick Abrams">
           <div class="flex flex-col text-xs">
-            <h3 class="text-lightGray font-bold">Patrick Abrams</h3>
-            <p class="text-lightGray opacity-50">Verified Graduate</p>
+            <h3 class="text-tg-lightGray font-bold">Patrick Abrams</h3>
+            <p class="text-tg-lightGray opacity-50">Verified Graduate</p>
           </div>
         </div>
         <div>
@@ -117,7 +102,7 @@
             Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
             learning from their experiences was easy.
           </p>
-          <p class="mt-5 text-sm text-lightGray opacity-70">
+          <p class="mt-5 text-sm text-tg-lightGray opacity-70">
             “ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
             gave me the confidence necessary to be able to go out in the world and present myself as a capable 
             junior developer. The standard is above the rest. You will get the personal attention you need from 
@@ -131,15 +116,15 @@
         <div class="flex justify-start items-center gap-5">
           <img class="w-8 rounded-full" src="./images/testimon/image-kira.jpg" alt="Kira Whittle">
           <div class="flex flex-col text-xs">
-            <h3 class="text-darkGrayBlue font-bold">Kira Whittle</h3>
-            <p class="text-darkGrayBlue opacity-50">Verified Graduate</p>
+            <h3 class="text-tg-darkGrayBlue font-bold">Kira Whittle</h3>
+            <p class="text-tg-darkGrayBlue opacity-50">Verified Graduate</p>
           </div>
         </div>
         <div>
           <p class="mt-5 text-lg font-bold text-gray-700">
             Such a life-changing experience. Highly recommended!
           </p>
-          <p class="mt-5 text-sm text-darkGrayBlue opacity-70">
+          <p class="mt-5 text-sm text-tg-darkGrayBlue opacity-70">
             “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
               professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
               student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
@@ -154,10 +139,10 @@
     </div>
   </main>
 
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.frontendmentor.io/profile/cssbubble">Priyanka</a>.
-  </div>
+  </footer>
 
 
 </body>

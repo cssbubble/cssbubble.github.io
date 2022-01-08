@@ -1548,6 +1548,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(134 239 172 / var(--tw-bg-opacity));
 }
 
+.bg-tg-lightGrayBlue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(210 46% 95% / var(--tw-bg-opacity));
+}
+
+.bg-tg-mod-violet {
+  --tw-bg-opacity: 1;
+  background-color: hsl(263 55% 52% / var(--tw-bg-opacity));
+}
+
+.bg-tg-darkGrayBlue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(217 19% 35% / var(--tw-bg-opacity));
+}
+
+.bg-tg-darkBlackBlue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(219 29% 14% / var(--tw-bg-opacity));
+}
+
 .bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
@@ -1591,16 +1611,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-to: #3b82f6;
 }
 
-.bg-contain {
-  background-size: contain;
-}
-
 .bg-right-top {
   background-position: right top;
-}
-
-.bg-top {
-  background-position: top;
 }
 
 .bg-no-repeat {
@@ -1720,9 +1732,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 4rem;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .px-32 {
@@ -1753,11 +1765,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .py-7 {
@@ -1891,14 +1898,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 10px;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-5xl {
@@ -2234,6 +2241,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-green-800 {
   --tw-text-opacity: 1;
   color: rgb(22 101 52 / var(--tw-text-opacity));
+}
+
+.text-tg-lightGray {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 81% / var(--tw-text-opacity));
+}
+
+.text-tg-darkGrayBlue {
+  --tw-text-opacity: 1;
+  color: hsl(217 19% 35% / var(--tw-text-opacity));
+}
+
+.text-tg-lightGrayBlue {
+  --tw-text-opacity: 1;
+  color: hsl(210 46% 95% / var(--tw-text-opacity));
 }
 
 .underline {

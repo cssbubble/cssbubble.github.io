@@ -40,7 +40,13 @@ module.exports = {
             'chat-lightGrayViolet': 'hsl(270, 20%, 96%)',
             'chat-vLightMagenta': 'hsl(289, 100%, 72%)',
             'hd-violet': 'hsl(257, 40%, 49%)',
-            'hd-soft-magenta': 'hsl(300, 69%, 71%)'      
+            'hd-soft-magenta': 'hsl(300, 69%, 71%)',
+            'tg-mod-violet': 'hsl(263, 55%, 52%)',
+            'tg-darkGrayBlue': 'hsl(217, 19%, 35%)',
+            'tg-darkBlackBlue': 'hsl(219, 29%, 14%)',
+            'tg-lightGray': 'hsl(0, 0%, 81%)',
+            'tg-lightGrayBlue': 'hsl(210, 46%, 95%)'    
+            
       },
       maxWidth: {
           's' : '375px',
