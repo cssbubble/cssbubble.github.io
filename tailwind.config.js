@@ -49,7 +49,12 @@ module.exports = {
             '4c-custom-red': 'hsl(0, 78%, 62%)',
             '4c-custom-cyan': 'hsl(180, 62%, 55%)',
             '4c-custom-orange': 'hsl(34, 97%, 64%)',
-            '4c-custom-blue' : 'hsl(212, 86%, 64%)',    
+            '4c-custom-blue' : 'hsl(212, 86%, 64%)',
+            'nft-very-dark-blue': 'hsl(217, 54%, 11%)',
+            'nft-dark-blue': 'hsl(216, 50%, 16%)',
+            'line-blue': 'hsl(215, 32%, 27%)',
+            'nft-cyan': 'hsl(178, 100%, 50%)',
+            'nft-soft-blue': 'hsl(215, 51%, 70%)'        
       },
       maxWidth: {
           's' : '375px',

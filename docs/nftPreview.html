@@ -12,35 +12,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
-  <script type="tailwind-config">
-    {
-      theme: {
-        extend: {
-          colors: {
-            'very-dark-blue': 'hsl(217, 54%, 11%)',
-            'dark-blue': 'hsl(216, 50%, 16%)',
-            'line-blue': 'hsl(215, 32%, 27%)',
-            'cyan': 'hsl(178, 100%, 50%)',
-            'soft-blue': 'hsl(215, 51%, 70%)'
-          }
-        }
-      }
-    }
-  </script>
+<link rel="stylesheet" href="css/styles.css">  
+
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body 
-  class="bg-very-dark-blue min-h-screen max-w-xs mx-auto my-auto grid place-items-center"
+  class="bg-nft-very-dark-blue min-h-screen max-w-xs mx-auto my-auto grid place-items-center"
   style="font-family: 'Outfit', sans-serif;">
-  <section class="rounded-2xl bg-dark-blue shadow-2xl">
+  <main class="rounded-2xl bg-nft-dark-blue shadow-2xl">
     <article class="p-6 relative">
+      <h1 class="sr-only">Equilibrium nft</h1>
       <div class="rounded-xl relative overflow-hidden group">
-        <div class="group-hover:bg-cyan">
-          <img src="./images/nft/image-equilibrium.jpg" alt="" class="rounded-xl group-hover:opacity-60  object-cover bg-blend-normal">
+        <div class="group-hover:bg-nft-cyan">
+          <img src="./images/nft/image-equilibrium.jpg" alt="Equilibrium nft" class="rounded-xl group-hover:opacity-60  object-cover bg-blend-normal">
         </div>
 
         <div class=" h-full absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100">
@@ -49,31 +36,30 @@
         
       </div>
       <div class="mt-5" >
-        <a href="#" class="text-white text-xl hover:text-cyan">Equilibrium #3429</a>
+        <a href="#" class="text-white text-xl hover:text-nft-cyan">Equilibrium #3429</a>
         
-        <p class="mt-3 text-soft-blue text-sm font-thin tracking-wide">Our Equilibrium collection promotes balance and calm.</p>
+        <p class="mt-3 text-nft-soft-blue text-sm font-thin tracking-wide">Our Equilibrium collection promotes balance and calm.</p>
         <div class="flex justify-between items-center mt-3">
           <div class="flex items-center gap-2">
-            <img src="./images/icon-ethereum.svg" alt="">
-            <p class="text-cyan">0.041 ETH</p>
+            <img src="./images/nft/icon-ethereum.svg" alt="">
+            <p class="text-nft-cyan">0.041 ETH</p>
           </div>
           <div class="flex items-center gap-2 ">
-            <img src="./images/nft/icon-clock.svg" alt="">
-            <p class="text-soft-blue">3 days left</p>
+            <img src="./images/nft/icon-clock.svg" alt="icon-clock">
+            <p class="text-nft-soft-blue">3 days left</p>
           </div>
         </div>
       </div>
       <div class="flex items-center border-t border-gray-600 mt-3 py-3">
-        <img src="./images/nft/image-avatar.png" alt="" class="w-8 h-8 rounded-full border">
-        <p class="ml-3 text-soft-blue text-sm tracking-wide">Creation of <a href="#" class="text-white hover:text-cyan">Jules Wyvern</a></p>
+        <img src="./images/nft/image-avatar.png" alt="user image" class="w-8 h-8 rounded-full border">
+        <p class="ml-3 text-nft-soft-blue text-sm tracking-wide">Creation of <a href="#" class="text-white hover:text-nft-cyan">Jules Wyvern</a></p>
       </div>
     </article>
-  </section>
+  </main>
   
-  
-
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.frontendmentor.io/profile/cssbubble">Priyanka</a>.</div>
+    Coded by <a href="https://www.frontendmentor.io/profile/cssbubble">Priyanka</a>
+  </footer>
 </body>
 </html>
