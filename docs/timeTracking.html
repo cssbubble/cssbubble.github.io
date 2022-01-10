@@ -26,7 +26,7 @@
       <!-- profile  -->
       <div class="base md:row-span-2 rounded-xl w-80 md:w-auto">
         <div class="profile rounded-xl grid grid-cols-3 md:grid-cols-1 py-6 items-center pl-8">
-          <img src="./images/timeTrack/image-jeremy.png" alt="" class="h-20 w-20 border-4 col-span-1 md:my-3 rounded-full">
+          <img src="./images/timeTrack/image-jeremy.png" alt="jeremy photo" class="h-20 w-20 border-4 col-span-1 md:my-3 rounded-full">
           <div class="text-white col-span-2 md:pt-6 md:pb-16 ">
             <p class="text-gray-400">Report for</p>
             <h1 class="text-gray-200 text-2xl md:text-4xl font-light tracking-wide">Jeremy Robson</h1>
@@ -72,10 +72,10 @@
               
             </div>
             <div class="grid grid-cols-2 md:grid-cols-1 md:gap-y-3 items-center">
-              <h3 
+              <h2 
                 x-text = "item.timeframes[selected].current + ' hrs'"
                 class="text-3xl md:text-6xl md:mt-6 font-light">
-              </h3>
+              </h2>
               <p
                 x-text = "item.timeframes[selected].label + ' ' + item.timeframes[selected].previous + ' hrs'" 
                 class="text-gray-400"></p>
@@ -87,14 +87,10 @@
     </div>
   </main>
 
-  
-  
-
-  
-  <div class="attribution flex justify-center items-center text-gray-200">
+  <footer class="attribution flex justify-center items-center text-gray-200">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://codepen.io/cssbubble">Priyanka</a>
-  </div>
+  </footer>
 
   <script>
     var sourceData = [
