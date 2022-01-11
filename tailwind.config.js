@@ -54,7 +54,11 @@ module.exports = {
             'nft-dark-blue': 'hsl(216, 50%, 16%)',
             'line-blue': 'hsl(215, 32%, 27%)',
             'nft-cyan': 'hsl(178, 100%, 50%)',
-            'nft-soft-blue': 'hsl(215, 51%, 70%)'        
+            'nft-soft-blue': 'hsl(215, 51%, 70%)',
+            'intro-form-red': 'hsl(0, 100%, 74%)',
+            'intro-form-green': 'hsl(154, 59%, 51%)',
+            'intro-form-accent': 'hsl(248, 32%, 49%)',
+            'intro-form-blue': 'hsl(246, 25%, 77%)',       
       },
       maxWidth: {
           's' : '375px',
@@ -63,9 +67,15 @@ module.exports = {
         'chat-xxs' : '0.5rem',
         'chat-small': '0.60rem',
       },
+      backgroundImage: {
+        'intro-form-mb': "url('/docs/images/intro-signup-form/bg-intro-mobile.png')",
+        'intro-form-dt': "url('/docs/images/intro-signup-form/bg-intro-desktop.png')",
+        'try': "url('https://images.unsplash.com/photo-1641238215950-9e0435966e20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8Ym84alFLVGFFMFl8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60')"
+      }
     },
   },
   plugins: [
-    require('@tailwindcss/typography')
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
   ],
 }
