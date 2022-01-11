@@ -666,10 +666,6 @@ select {
   border-width: 0;
 }
 
-.invisible {
-  visibility: hidden;
-}
-
 .fixed {
   position: fixed;
 }
@@ -759,22 +755,6 @@ select {
 
 .top-36 {
   top: 9rem;
-}
-
-.top-5 {
-  top: 1.25rem;
-}
-
-.top-6 {
-  top: 1.5rem;
-}
-
-.top-4 {
-  top: 1rem;
-}
-
-.right-2 {
-  right: 0.5rem;
 }
 
 .z-10 {
@@ -1223,16 +1203,16 @@ select {
   max-width: 64rem;
 }
 
+.max-w-6xl {
+  max-width: 72rem;
+}
+
 .max-w-s {
   max-width: 375px;
 }
 
 .max-w-lg {
   max-width: 32rem;
-}
-
-.max-w-6xl {
-  max-width: 72rem;
 }
 
 .flex-1 {
@@ -1830,7 +1810,7 @@ select {
 }
 
 .bg-intro-form-mb {
-  background-image: url('/docs/images/intro-signup-form/bg-intro-mobile.png');
+  background-image: url('./images/intro-signup-form/bg-intro-mobile.png');
 }
 
 .from-chat-lightMagenta {
@@ -2437,11 +2417,6 @@ select {
   color: hsl(0 100% 74% / var(--tw-text-opacity));
 }
 
-.text-intro-form-green {
-  --tw-text-opacity: 1;
-  color: hsl(154 59% 51% / var(--tw-text-opacity));
-}
-
 .text-nft-soft-blue {
   --tw-text-opacity: 1;
   color: hsl(215 51% 70% / var(--tw-text-opacity));
@@ -2719,11 +2694,6 @@ select {
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
-.invalid\:border-intro-form-red:invalid {
-  --tw-border-opacity: 1;
-  border-color: hsl(0 100% 74% / var(--tw-border-opacity));
-}
-
 .hover\:visible:hover {
   visibility: visible;
 }
@@ -2900,10 +2870,6 @@ select {
 
 .group:hover .group-hover\:opacity-60 {
   opacity: 0.6;
-}
-
-.peer:invalid ~ .peer-invalid\:visible {
-  visibility: visible;
 }
 
 @media (min-width: 640px) {
@@ -3202,6 +3168,10 @@ select {
     margin-left: 7rem;
   }
 
+  .md\:ml-1 {
+    margin-left: 0.25rem;
+  }
+
   .md\:ml-20 {
     margin-left: 5rem;
   }
@@ -3212,14 +3182,6 @@ select {
 
   .md\:mt-6 {
     margin-top: 1.5rem;
-  }
-
-  .md\:ml-2 {
-    margin-left: 0.5rem;
-  }
-
-  .md\:ml-1 {
-    margin-left: 0.25rem;
   }
 
   .md\:block {
@@ -3501,7 +3463,7 @@ select {
   }
 
   .md\:bg-intro-form-dt {
-    background-image: url('/docs/images/intro-signup-form/bg-intro-desktop.png');
+    background-image: url('./images/intro-signup-form/bg-intro-desktop.png');
   }
 
   .md\:object-fill {
