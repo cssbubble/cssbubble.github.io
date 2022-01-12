@@ -68,8 +68,8 @@ module.exports = {
         'chat-small': '0.60rem',
       },
       backgroundImage: {
-        'intro-form-mb': "url('./images/intro-signup-form/bg-intro-mobile.png')",
-        'intro-form-dt': "url('./images/intro-signup-form/bg-intro-desktop.png')",
+        'intro-form-mb': "url('/images/intro-signup-form/bg-intro-mobile.png')",
+        'intro-form-dt': "url('/images/intro-signup-form/bg-intro-desktop.png')",
         
       }
     },
