@@ -58,7 +58,11 @@ module.exports = {
             'intro-form-red': 'hsl(0, 100%, 74%)',
             'intro-form-green': 'hsl(154, 59%, 51%)',
             'intro-form-accent': 'hsl(248, 32%, 49%)',
-            'intro-form-blue': 'hsl(246, 25%, 77%)',       
+            'intro-form-blue': 'hsl(246, 25%, 77%)',     
+            'ap-darkGrayBlue': 'hsl(217, 19%, 35%)',
+            'ap-darkBlue': 'hsl(214, 17%, 51%)',
+            'ap-grayBlue': 'hsl(212, 23%, 69%)',
+            'ap-lightGrayBlue': 'hsl(210, 46%, 95%)' 
       },
       maxWidth: {
           's' : '375px',
