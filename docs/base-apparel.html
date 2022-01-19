@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+   <link rel="stylesheet" href="css/styles.css"> 
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
+<script defer src="./scripts/base-apparel.js"></script>
+<link rel="stylesheet" href="./css/base-apparel.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body style="font-family: 'Josefin Sans', sans-serif;">
+    <header class="w-full px-5 py-10 mx-auto lg:max-w-5xl">
+        <img src="./images/base-apparel/logo.svg" alt="base apparel logo">
+    </header>
+    <main class="w-full mx-auto lg:max-w-5xl flex flex-col justify-center items-center lg:grid lg:grid-cols-2 md:max-w-2xl">
+        <div class="lg:order-last">
+            <div class="lg:hidden">
+                <img src="./images/base-apparel/hero-mobile.jpg" alt="hero mobile">
+            </div>
+            <div class="hidden lg:flex shrink-0 absolute top-0">
+                <img src="./images/base-apparel/hero-desktop.jpg" alt="hero desktop">
+            </div>
+        </div>
+        
+        <div class="mt-16 flex flex-col justify-center items-center lg:items-start lg:max-w-xl lg:mr-32">
+            <h1 class="text-6xl uppercase tracking-widest text-center lg:text-left"> 
+                <span class="text-ba-desatRed  font-light">We're</span> 
+                <br>
+                <span class="text-gray-800">coming</span> <br>
+                <span class="text-gray-800">soon</span> 
+            </h1>
+            <p class="text-ba-desatRed px-5 text-center mt-5 md:px-28 lg:px-0 lg:text-left">Hello fellow shoppers! We're currently building our new fashion store. 
+                Add your email below to stay up-to-date with announcements and our launch deals.
+            </p>
+            <form action="#" id="form" class="mt-10 accent-ba-desatRed w-full px-10 md:w-2/3 lg:w-full lg:px-0">
+                <div class="flex w-full relative">
+                    <label for="email"></label>
+                    <input type="email" placeholder="Email Address" id="email" name="email" class="h-12 rounded-full w-full pl-5 text-ba-desatRed placeholder-ba-desatRed border-ba-desatRed focus:outline-none focus:border-ba-darkGrayRed">
+
+                    <button type="submit" class="absolute right-0 h-12 w-20 rounded-full bg-ba-desatRed hover:opacity-80  shadow-xl flex justify-center items-center -ml-10 focus:outline-none ">                   
+                        <img src="./images/base-apparel/icon-arrow.svg" alt="arrow icon">
+                    </button>
+                </div>
+                <p id="email-error" class="hidden">Please provide a valid email</p>
+            </form>
+        </div>
+    </main>
+    <footer class="mt-72">
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Priyanka</a>.
+        </p>
+      </footer>
+</body>
+</html>

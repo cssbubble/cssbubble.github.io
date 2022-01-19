@@ -62,7 +62,10 @@ module.exports = {
             'ap-darkGrayBlue': 'hsl(217, 19%, 35%)',
             'ap-darkBlue': 'hsl(214, 17%, 51%)',
             'ap-grayBlue': 'hsl(212, 23%, 69%)',
-            'ap-lightGrayBlue': 'hsl(210, 46%, 95%)' 
+            'ap-lightGrayBlue': 'hsl(210, 46%, 95%)',
+            'ba-desatRed': 'hsl(0, 36%, 70%)',
+            'ba-softRed': 'hsl(0, 93%, 68%)',
+            'ba-darkGrayRed': 'hsl(0, 6%, 24%)' 
       },
       maxWidth: {
           's' : '375px',
