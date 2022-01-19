@@ -27,6 +27,7 @@ function checkInputs(){
     } else {
         firstName.classList.add('success');
         firstError.classList.add('hidden');
+        firstName.classList.remove('error');
     }
 
     if(lValue === ''){
@@ -36,6 +37,7 @@ function checkInputs(){
     } else {
         lastName.classList.add('success');
         lastError.classList.add('hidden')
+        lastName.classList.remove('error');
     }
 
     if(eValue === ''){
@@ -45,6 +47,7 @@ function checkInputs(){
     }else {
         email.classList.add('success');
         emailError.classList.add('hidden')
+        email.classList.remove('error');
     }
 
     if(pValue === ''){

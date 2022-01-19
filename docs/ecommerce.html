@@ -11,24 +11,8 @@
   
   <title>E-commerce product page</title>
   <link rel="stylesheet" href="css/styles.css">
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-  <!-- <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'ec-customOrange': 'hsl(26, 100%, 55%)',
-            'ec-paleOrange': 'hsl(25, 100%, 94%)',
-            'ec-veryDarkBlue': 'hsl(220, 13%, 13%)',
-            'ec-darkGrayishBlue': 'hsl(219, 9%, 45%)',
-            'ec-grayishBlue': 'hsl(220, 14%, 75%)',
-            'ec-lightGrayishBlue': 'hsl(223, 64%, 98%)',
-          }  
-        }
-      }
-    }  
-  </script> -->
-  <link rel="stylesheet" href="styles.css">
+  <script src="./scripts/ecommerce.js"></script>
+  
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -43,7 +27,6 @@
     <header class="p-5 md:py-0 relative" x-data = "{ open : false}">
       <nav class="flex justify-between items-center">
         <div class="flex justify-center items-center">
-
           <!-- mobile menu  -->
           <button @click = "open = !open" class="md:hidden" aria-label="menu">
             <img src="./images/E-commercePage/icon-menu.svg" alt="menu icon">
@@ -151,7 +134,6 @@
               <img class=" w-6 h-6 md:w-12 md:h-12" src="./images/E-commercePage/image-avatar.png" alt="user image">
             </button> 
           </div>  
-
         </div>  
       </nav>
     </header>
@@ -169,38 +151,42 @@
         <!-- image 1  -->
         <img 
           x-show = "selected == 'image1' "
-          class="w-full md:rounded-2xl md:col-span-4" 
+          class="slide w-full md:rounded-2xl md:col-span-4" 
           src="./images/E-commercePage/image-product-1.jpg" 
-          alt="product 1">
+          alt="product 1"
+          >
 
         <!-- image 2   -->
         <img 
           x-show = " selected == 'image2' " 
-          class="w-full md:rounded-2xl md:col-span-4" 
+          class="slide w-full md:rounded-2xl md:col-span-4" 
           src="./images/E-commercePage/image-product-2.jpg" 
-          alt="product 2">
+          alt="product 2"
+          >
 
         <!-- image 3 -->
         <img 
           x-show = " selected == 'image3' "
-          class="w-full md:rounded-2xl md:col-span-4" 
+          class="slide w-full md:rounded-2xl md:col-span-4" 
           src="./images/E-commercePage/image-product-3.jpg" 
-          alt="product 3">
+          alt="product 3"
+          >
 
         <!-- image 4  -->
         <img 
           x-show = " selected == 'image4' "
-          class="w-full md:rounded-2xl md:col-span-4" 
+          class="slide w-full md:rounded-2xl md:col-span-4" 
           src="./images/E-commercePage/image-product-4.jpg" 
-          alt="product 4 ">
+          alt="product 4 "
+          >
         <!-- arrow icons for small screens  -->
         
         <div class="md:hidden absolute inset-0 flex justify-between items-center px-4">
-          <button class="p-3 bg-white  rounded-full" aria-label="icon-previous">
+          <button class="p-3 rounded-full" aria-label="icon-previous" onclick="plusSlides(-1)">
             <img class="mr-1 w-2" src="./images/E-commercePage/icon-previous.svg" alt="click for previous image">
           </button>
           
-          <button class=" bg-white p-3 rounded-full" aria-label="icon-next">
+          <button class="p-3 rounded-full" aria-label="icon-next" onclick="plusSlides(1)">
             <img class="ml-1 w-2" src="./images/E-commercePage/icon-next.svg" class="" alt="click for next image">
           </button>
         </div>
@@ -247,11 +233,11 @@
       </section>
 
       <section class="px-3 md:px-0">
-        <h2 class="sr-only">product details</h2>
+        <h1 class="sr-only">product details</h1>
         <section class="p-5">
           <h3 class="sr-only">company and product description</h3>
-          <h2 class="uppercase tracking-widest text-[12px] font-semibold text-ec-customOrange">Sneaker Company</h2>
-          <h1 class="mt-3 md:mt-5 text-3xl font-semibold text-ec-veryDarkBlue md:text-4xl">Fall Limited Edition Sneakers</h1>
+          <h3 class="uppercase tracking-widest text-[12px] font-semibold text-ec-customOrange">Sneaker Company</h3>
+          <h3 class="mt-3 md:mt-5 text-3xl font-semibold text-ec-veryDarkBlue md:text-4xl">Fall Limited Edition Sneakers</h3>
           <p class="mt-3 md:mt-10 text-ec-darkGrayishBlue">These low-profile sneakers are your perfect casual wear companion. Featuring a 
             durable rubber outer sole, they’ll withstand everything the weather can offer.
           </p>
@@ -293,12 +279,10 @@
             <h3 class="sr-only">add to cart</h3>
             <button
               @click = "addCart = true " aria-label="add-cart"
-              class="flex justify-center items-center bg-ec-customOrange text-ec-paleOrange w-full rounded-lg py-4 md:py-[14px] shadow-orange-200 shadow-2xl hover:bg-orange-400">
+              class="flex justify-center items-center bg-ec-customOrange text-ec-paleOrange w-full rounded-lg py-4 md:py-[14px] shadow-orange-200 shadow-2xl hover:bg-orange-400 text-sm gap-3 font-semibold">
               
               <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="hsl(25, 100%, 94%)" fill-rule="nonzero"/></svg>
-      
-              <p class="text-sm ml-3 font-semibold">Add to cart</p>
-              
+              Add to cart              
             </button>
           </section>
         </div>
