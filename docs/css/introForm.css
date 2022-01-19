@@ -1,0 +1,22 @@
+.error {
+    background-image: url('../images/intro-signup-form/icon-error.svg');
+    background-position: 95%;
+    background-repeat: no-repeat;
+    right: 1.25rem;
+    width: 100%;
+    border: 1px solid red; 
+    padding: 1rem;
+    border-radius: 0.5rem;
+     
+}
+.error-msg {
+    font-size: smaller; 
+    color: red;
+    text-align: right;
+    margin-top: 2px;
+    /* visibility: hidden; */
+     /* text-xs text-intro-form-red text-right mt-2 italic */
+}
+.success {
+    border: 1px solid green;
+}
