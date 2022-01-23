@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+      
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        
+        <title>FAQ Accordion Card</title>
+      
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+        <script defer src="https://unpkg.com/alpinejs@3.7.0/dist/cdn.min.js"></script>
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                  darkBlue: 'hsl(238, 29%, 16%)',
+                  softRed: 'hsl(14, 88%, 65%)',
+                  softViolet: 'hsl(273, 75%, 66%)',
+                  softBlue: 'hsl(240, 73%, 65%)',
+                  veryDarkGrayBlue: 'hsl(237, 12%, 33%)',
+                  darkGrayBlue: 'hsl(240, 6%, 50%)',
+                  lightGrayBlue: 'hsl(240, 5%, 91%)'
+                },
+                screens: {
+                  'lg': '1440px'
+                }
+            }
+          }
+        </script>
+      
+        <style>
+          .attribution { font-size: 11px; text-align: center; }
+          .attribution a { color: hsl(228, 45%, 44%); }
+        </style>
+    </head>
+    <body style="font-family: Kumbh Sans, sans-serif;">
+        <main class="flex justify-center items-center mt-20 min-h-screen w-full lg:max-w-screen-lg mx-auto bg-gradient-to-b from-softViolet to-softBlue px-5 lg:px-0 relative">
+            <!-- <img class="absolute z-10 right-1/2" src="./images/bg-pattern-desktop.svg" alt=""> -->
+            <section class="w-full max-w-sm md:max-w-4xl  bg-gray-100 rounded-3xl relative">
+                <!-- <img class="hidden lg:inline-block absolute z-10 right-1/2 " src="./images/bg-pattern-desktop.svg" alt=""> -->
+                <div class="grid lg:grid-cols-2 lg:gap-10 justify-center lg:overflow-hidden" aria-hidden="true">
+                    <div class="h-28 lg:hidden bg-top bg-auto bg-no-repeat"  
+                    style="background-image: url('./images/faq-accordion/bg-pattern-mobile.svg');">
+                        <img class="w-80 mx-auto" style="margin-top: -11rem;" src="./images/faq-accordion/illustration-woman-online-mobile.svg" alt="working woman illustration">
+                    </div>
+                    <div class="hidden lg:grid items-center bg-auto bg-no-repeat bg-right mr-10" 
+                    style="background-image: url('./images/faq-accordion/bg-pattern-desktop.svg');">
+                        <img class="absolute -left-24 top-48 z-10" src="./images/faq-accordion/illustration-box-desktop.svg" alt="box illustration">
+                        <img class="relative -left-24 w-full" src="./images/faq-accordion/illustration-woman-online-desktop.svg" alt="working woman illustration">
+                    </div>
+                   
+                    <section class=" flex flex-col justify-center items-center mt-16 md:mt-0 lg:items-start py-8 px-6 lg:px-0 lg:mr-20">
+                
+                        <h1 class="font-bold text-3xl">FAQ</h1>
+                        <div class="w-full my-5 text-sm" >
+                            <div class="my-5 " x-data="{open: false}">
+                            <button 
+                                class="w-full flex justify-between items-center"
+                                @click="open = !open"
+                                @click.outside= "open = false">
+                                <h2
+                                class="text-darkGrayBlue" 
+                                :class = "open ? 'text-darkBlue font-bold' : ''">How many team members can I invite?</h2>
+                                
+                                <img 
+                                    class="transition duration-150 ml-3"
+                                    :class = "open ? 'rotate-180' : '' " 
+                                    src="./images/faq-accordion/icon-arrow-down.svg" alt="down arrow">
+                                
+                            </button>
+                            <p 
+                                x-show="open" 
+                                x-transition:enter.duration.700ms
+                                x-transition:leave.duration.00ms 
+                                class="mt-3 text-darkGrayBlue">You can invite up to 2 additional users on the Free plan. There is no limit on 
+                                team members for the Premium plan.</p> 
+                            
+                            </div>
+                            <hr class="text-lightGrayBlue">
+                            
+                            <div class="my-5" x-data="{open: false}">
+                            <button 
+                                class="w-full flex justify-between items-center"
+                                @click="open = !open"
+                                @click.outside= "open = false">
+                                <h2
+                                class="text-darkGrayBlue" 
+                                :class = "open ? 'text-darkBlue font-bold' : ''">
+                                What is the maximum file upload size?
+                                </h2>
+                                <img 
+                                class="transition duration-150"
+                                :class = "open ? 'rotate-180' : '' " 
+                                src="./images/faq-accordion/icon-arrow-down.svg" alt="down arrow">
+                            </button>
+                            <p x-show="open" 
+                                x-transition
+                                x-transition:enter.duration.700ms
+                                x-transition:leave.duration.500ms 
+                                class="mt-3">
+                                No more than 2GB. All files in your account must fit your allotted storage space.
+                            </p>
+                            </div>
+                            <hr class="text-lightGrayBlue">
+                
+                            <div class="my-5" x-data="{open: false}">
+                            <button 
+                                @click="open = !open"
+                                @click.outside= "open = false"
+                                class="w-full flex justify-between items-center">
+                                <h2
+                                class="text-darkGrayBlue" 
+                                :class = "open ? 'text-darkBlue font-bold' : ''">
+                                How do I reset my password?
+                                </h2>
+                                <img
+                                class="transition duration-150"
+                                :class = "open ? 'rotate-180' : '' "  
+                                src="./images/faq-accordion/icon-arrow-down.svg" alt="down arrow">
+                            </button>
+                            <p 
+                                x-show="open" 
+                                x-transition 
+                                x-transition:enter.duration.700ms
+                                x-transition:leave.duration.500ms
+                                class="mt-3">
+                                Click “Forgot password” from the login page or “Change password” from your profile page.
+                                A reset link will be emailed to you.
+                            </p>
+                            </div>
+                            <hr class="text-lightGrayBlue">
+                
+                            <div class="my-5" x-data="{open: false}">
+                            <button
+                            @click="open = !open" 
+                            @click.outside= "open = false"
+                            class="w-full flex justify-between items-center">
+                                <h2
+                                class="text-darkGrayBlue" 
+                                :class = "open ? 'text-darkBlue font-bold' : ''">
+                                Can I cancel my subscription?
+                                </h2>
+                                <img
+                                class="transition duration-150"
+                                :class = "open ? 'rotate-180' : '' "  
+                                src="./images/faq-accordion/icon-arrow-down.svg" alt="down arrow">
+                            </button>
+                            <p 
+                                x-show="open" 
+                                x-transition
+                                x-transition:enter.duration.700ms
+                                x-transition:leave.duration.500ms 
+                                class="mt-3">
+                                Yes! Send us a message and we’ll process your request no questions asked.
+                            </p>
+                            </div>
+                            <hr class="text-lightGrayBlue">
+                
+                            <div class="my-5" x-data="{open: false}">
+                            <button 
+                            @click="open = !open"
+                            @click.outside= "open = false"
+                            class="w-full flex justify-between items-center">
+                                <h2
+                                class="text-darkGrayBlue" 
+                                :class = "open ? 'text-darkBlue font-bold' : ''">
+                                Do you provide additional support?
+                                </h2>
+                                <img
+                                class="transition duration-150"
+                                :class = "open ? 'rotate-180' : '' "  
+                                src="./images/faq-accordion/icon-arrow-down.svg" alt="down arrow">
+                            </button>
+                            <p 
+                                x-show="open" 
+                                x-transition
+                                x-transition:enter.duration.700ms
+                                x-transition:leave.duration.500ms 
+                                class="mt-3">
+                                Chat and email support is available 24/7. Phone lines are open during normal business hours.
+                            </p>
+                            </div>
+                            <hr class="text-lightGrayBlue">
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>        
+    </body>
+</html>

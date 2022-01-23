@@ -11,7 +11,6 @@ const passwordError = document.getElementById('password-error')
 form.addEventListener('submit', (e) => {
     e.preventDefault(); 
     checkInputs();
-    success(firstName, lastName, email, password);
 });
 
 function checkInputs(){
